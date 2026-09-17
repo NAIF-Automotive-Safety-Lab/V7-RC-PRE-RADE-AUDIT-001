@@ -1,0 +1,624 @@
+{
+  "TASK_ID": "V7-RC-PRE-RADE-AUDIT-001",
+  "report_identity": "V7_FINAL_PRE_RADE_ENGINEERING_AUDIT",
+  "generated_utc": "2026-09-17T22:59:14.025387+00:00",
+  "decision": "FAIL_CLOSED_ENGINEERING_DISCLOSURE_RECOMMENDATION",
+  "current_classification": "V7_FROZEN_RESEARCH_ENGINEERING_DEFINITION_BASELINE",
+  "not_manufacturing_ready": true,
+  "not_crash_validated": true,
+  "not_cae_validated": true,
+  "manus_verification": "NOT_CLAIMED",
+  "geometry_changed": false,
+  "design_intent_changed": false,
+  "engineering_values_changed": false,
+  "source_basis": {
+    "SRC_V7_PATENT": {
+      "name": "T_OCS_V7_Patent_Draft_Invention_Disclosure(2).pdf",
+      "id": "file_0000000067748243bb2c4fd52b3276b0",
+      "evidence": "V7 stable reference numerals 100-210; V7 claim center; evidence discipline; V7 claim-to-validation gates."
+    },
+    "SRC_V6_PATENT": {
+      "name": "T_OCS_V6_Patent_Draft_Invention_Disclosure(1).pdf",
+      "id": "file_00000000dbfc824693749f9654b6e350",
+      "evidence": "V6 state machine S0-S5, claim architecture, validation observables, explicit packaging caveats and pre-filing gates."
+    },
+    "EVID_GAP_REGISTER": {
+      "name": "V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json",
+      "id": "file_00000000ab948246b4b3a7fac93c309f",
+      "evidence": "12 requirements; 0 fully closed; all 12 partial; missing evidence and status."
+    },
+    "EVID_EXEC_R2": {
+      "name": "V7_R2_EXECUTIVE_REPORT.md",
+      "id": "file_0000000034348210936cb1b6dd78a13b",
+      "evidence": "Current V7-RC-002 overlap/kinematic/model status and remaining blockers."
+    },
+    "EVID_EXEC_CURRENT": {
+      "name": "V7_ENGINEERING_EXECUTIVE_REPORT.md",
+      "id": "file_000000003a3481f4a378c2b919856002",
+      "evidence": "Current reconstruction, material/PMI/CAE/manufacturing status and remaining true engineering gaps."
+    },
+    "EVID_CAD": {
+      "name": "T_OCS_V0_CAD_VALIDATION_REPORT.pdf",
+      "id": "file_000000000f548246b2dcdd86a3b700f6",
+      "evidence": "Historical/current CAD validation boundary: hardpoints hold, DOF/stroke caveats, interference classification boundary."
+    },
+    "EVID_READINESS": {
+      "name": "V7_ENGINEERING_READINESS_SNAPSHOT.md",
+      "id": "file_000000001e2082118ecc96d9591af543",
+      "evidence": "Readiness summary and critical blockers."
+    },
+    "EVID_R4_1_AUDIT": {
+      "name": "R4.1_NATIVE_STEP_SOURCE_AUDIT.md",
+      "id": "file_00000000f1ec81f4b7b2910e485e7efe",
+      "evidence": "R4.1 frozen/immutable; current runtime cannot deterministically re-extract exact payload; fabrication release blocked."
+    },
+    "EVID_MISSING": {
+      "name": "V7_MISSING_EVIDENCE_REGISTER.json",
+      "id": "file_000000006a0c8211929e8f980cccd074",
+      "evidence": "Missing evidence list: OEM inputs, materials, absorber, lock, rebound, manufacturing drawings, correlation."
+    },
+    "EVID_INTERFACE": {
+      "name": "V7_CURRENT_ENGINEERING_INTERFACE_DEFINITION.json",
+      "id": "file_00000000af608211960bd2902c1a9b8a",
+      "evidence": "IF-R4-01..09 design-intent definitions; fastening/clearance/source boundaries; physical validation not done."
+    },
+    "EVID_FASTENER": {
+      "name": "V7_FASTENER_JOINT_DEFINITION_R5.json",
+      "id": "file_0000000019e48211b4fca3f2512ae59b",
+      "evidence": "IF-R4-01..09 fastener fields remain null / supplier-controlled / test-required."
+    },
+    "EVID_PMI": {
+      "name": "V7_R2_PMI_GDT.json",
+      "id": "file_00000000d6fc8210abfc19a717fa18a2",
+      "evidence": "Critical PMI/GD&T characteristics defined but unreleased; source drawing/tolerance stack required."
+    },
+    "EVID_CAE": {
+      "name": "V7_CAE_DEPENDENCY_GRAPH_R5.json",
+      "id": "file_00000000cdb08208906e2bb1799dd158",
+      "evidence": "CAE nodes and dependencies; critical inputs remain external/test-required."
+    },
+    "EVID_VEHICLE": {
+      "name": "VEHICLE_INPUT_REQUEST_R5.json",
+      "id": "file_000000005d2481f4b7fa8848971f7379",
+      "evidence": "Vehicle datum, hardpoints, package and load-interface inputs required; current state blocked."
+    },
+    "EVID_ASTRA": {
+      "name": "V7_ASTRA_TRANSFER_PROGRAM_FINAL_REPORT.md",
+      "id": "file_00000000b2c08211bb3c4b48ffca0d64",
+      "evidence": "Controlled evidence-domain split; manufacturing/safety/OEM/physical validation not established."
+    }
+  },
+  "stable_reference_numerals": {
+    "100": "vehicle/base interface; vehicle hardpoint load transfer",
+    "110L/110R": "bilateral longitudinal load paths S1/S2; guidance/load sharing/torsional control",
+    "120": "seat carriage; seat-to-rail/absorber interface",
+    "130": "ride-down energy-management module",
+    "140": "pelvic-control / anti-submarining pan",
+    "150L/150R": "seatback rotation-control links",
+    "160": "seatback frame; torso/head structural support",
+    "170": "multi-state lock; normal/armed/ride-down/rebound/secure states",
+    "180": "rebound-control module",
+    "190": "occupant restraint interface; seat-belt/airbag interface",
+    "200": "torso/head guidance",
+    "210": "sensor/trigger interface",
+    "J": "hinge/pivot/fastener hardware"
+  },
+  "requirement_count": 12,
+  "requirements_closed": 0,
+  "requirements_partial": 12,
+  "requirements": [
+    {
+      "REQ": "P0-001",
+      "TITLE": "Core mechanism / configuration baseline",
+      "V7_TARGET": "100 + V7 stable architecture",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "authoritative assembly hierarchy; exact part/body identity; configuration/revision manifest",
+      "MISSING_EVIDENCE": "authoritative R4.1 component mapping; independent configuration verification"
+    },
+    {
+      "REQ": "P0-002",
+      "TITLE": "Bilateral longitudinal load paths",
+      "V7_TARGET": "110L/110R",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "exact rail geometry/sections; rail axes/datums; mounting interfaces; parallelism/spacing; runner/capture geometry; continuous load path",
+      "MISSING_EVIDENCE": "authoritative rail geometry/tolerances; hardpoint/fixture mapping; measured L/R reactions"
+    },
+    {
+      "REQ": "P0-003",
+      "TITLE": "Controlled carriage translation",
+      "V7_TARGET": "120",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "carriage identity; prismatic joint; rail/runner mating; travel/end-stops; constraint graph",
+      "MISSING_EVIDENCE": "authoritative joint semantics; released end-stop geometry; executable authoritative kinematic proof"
+    },
+    {
+      "REQ": "P0-004",
+      "TITLE": "Ride-down energy-management path",
+      "V7_TARGET": "130",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "absorber mount geometry; working axis; clevis/pin interfaces; stroke envelope; bilateral topology; replaceability",
+      "MISSING_EVIDENCE": "selected/serialized absorber; measured F-x/F-v/hysteresis/temperature; exact mount tolerances"
+    },
+    {
+      "REQ": "P0-005",
+      "TITLE": "Ride-down dynamic response / bilateral reactions",
+      "V7_TARGET": "110L/110R + 120 + 130",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "displacement datum; L/R reaction locations; absorber force/stroke interface; instrumentation clearance",
+      "MISSING_EVIDENCE": "calibrated sensors; actual load case; raw measured x(t), F_L, F_R"
+    },
+    {
+      "REQ": "P0-006",
+      "TITLE": "Pelvic-control / anti-submarining geometry",
+      "V7_TARGET": "140",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "seat-pan/pelvic geometry; reference surfaces/datums; front control/ramp; attachment/load path",
+      "MISSING_EVIDENCE": "released detailed geometry; dynamic pelvis/belt/ATD evidence; occupant qualification"
+    },
+    {
+      "REQ": "P0-007",
+      "TITLE": "Left rotation-control path",
+      "V7_TARGET": "150L",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "link geometry; pivot axes; attachment topology; stops/limits; clearance; inspection datums",
+      "MISSING_EVIDENCE": "authoritative dimensions/tolerances; joint compliance; link-load evidence; axis verification"
+    },
+    {
+      "REQ": "P0-008",
+      "TITLE": "Right rotation-control path",
+      "V7_TARGET": "150R",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "right-side link geometry; pivot axis; attachment topology; symmetry/inspection",
+      "MISSING_EVIDENCE": "authoritative dimensions/tolerances; joint compliance; axis verification; L/R differential evidence"
+    },
+    {
+      "REQ": "P0-009",
+      "TITLE": "Seatback frame",
+      "V7_TARGET": "160",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "frame geometry; hinge interface; link mounts; section/thickness; material identity; weld/joint definition",
+      "MISSING_EVIDENCE": "released fabrication geometry; material certificates; weld/joint spec; structural capacity evidence"
+    },
+    {
+      "REQ": "P0-010",
+      "TITLE": "Multi-state lock / event transition",
+      "V7_TARGET": "170",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "capture geometry; lock mechanism; engagement interface; release/reset; fault containment; state sensing",
+      "MISSING_EVIDENCE": "final physical implementation; fault/unintended-release tests; validated trigger/timing"
+    },
+    {
+      "REQ": "P0-011",
+      "TITLE": "Rebound control",
+      "V7_TARGET": "180",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "working axis; mounting/capture geometry; reverse-motion interface; reset path; clearance",
+      "MISSING_EVIDENCE": "final mechanism selection; measured force/velocity law; rebound/secondary-excursion evidence"
+    },
+    {
+      "REQ": "P0-012",
+      "TITLE": "Occupant-restraint path availability",
+      "V7_TARGET": "190",
+      "STATUS": "PARTIAL",
+      "REQUIRED_EVIDENCE": "anchor geometry; structural load path; belt/airbag interface; vehicle hardpoints",
+      "MISSING_EVIDENCE": "vehicle-specific anchor coordinates; dynamic belt geometry/anchorage loads; sled/ATD evidence"
+    }
+  ],
+  "mandatory_final_table": [
+    {
+      "ITEM": "Stable V7 architecture",
+      "CURRENT_STATUS": "KNOWN / DESIGN_DEFINED",
+      "EVIDENCE": "V7 disclosure defines stable numerals 100–210 and their functional roles.",
+      "GAP": "No authoritative manufacturing-level mapping for every physical detail.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review the disclosed architecture and claim relationships.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not treat reference numerals or concept geometry as production facts."
+    },
+    {
+      "ITEM": "Core inventive relationship",
+      "CURRENT_STATUS": "KNOWN / DISCLOSURE_DEFINED",
+      "EVIDENCE": "Bilateral longitudinal paths + controlled ride-down + distinct seatback rotation control + state transition + rebound + restraint availability.",
+      "GAP": "Physical implementation and validation are not established.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Assess written-description coherence and claim-to-evidence traceability.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not assume novelty, patentability, enablement, or physical effectiveness."
+    },
+    {
+      "ITEM": "H-point / R-point",
+      "CURRENT_STATUS": "OEM_INPUT_REQUIRED",
+      "EVIDENCE": "Current V7 evidence identifies H-point/vehicle hardpoints as unresolved external inputs; V6 explicitly says renderings do not prove H-point compliance.",
+      "GAP": "No authoritative vehicle-specific H-point/R-point package.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Verify what vehicle/package definition is required for a Stage-0 review; identify missing datum/anthropometry references.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not substitute a placeholder H-point or concept dimension."
+    },
+    {
+      "ITEM": "Occupant packaging",
+      "CURRENT_STATUS": "OEM_INPUT_REQUIRED / PARTIAL",
+      "EVIDENCE": "V6 states front/rear packaging is vehicle-dependent and renderings do not prove occupant clearance.",
+      "GAP": "No vehicle-specific envelope/ATD seating proof.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review packaging logic and enumerate required occupant envelope checks.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not assume concept boards satisfy packaging or anthropometry."
+    },
+    {
+      "ITEM": "Backrest angle / range / end-stops",
+      "CURRENT_STATUS": "MODEL_DERIVABLE / SOURCE_REQUIRED",
+      "EVIDENCE": "Current model report shows q2 as model coordinate over a reference range; CAD reports state static geometry does not prove end-stops.",
+      "GAP": "Authoritative stop geometry and physical stop proof are missing.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review disclosed angle-control mechanism and required verification method.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not convert model range into physical seatback capability."
+    },
+    {
+      "ITEM": "Clearance / interference",
+      "CURRENT_STATUS": "PARTIAL",
+      "EVIDENCE": "V7-R2 reports 9 retained intentional interfaces after prior correction; earlier V0 audit required explicit classification of intersections.",
+      "GAP": "Release-level continuous-motion clearance and authoritative geometry are incomplete.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review interface ownership and verification methodology.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not infer zero interference from a limited/static check."
+    },
+    {
+      "ITEM": "Rail / hardpoint integration",
+      "CURRENT_STATUS": "BLOCKED",
+      "EVIDENCE": "110L/110R are design-defined; vehicle-specific hardpoints remain external/OEM required.",
+      "GAP": "No authoritative vehicle hardpoints or fixture mapping.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Define exact data required to connect V7 rails to a target vehicle.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not invent spacing, coordinates, loads or BIW interfaces."
+    },
+    {
+      "ITEM": "BIW interface logic",
+      "CURRENT_STATUS": "OEM_INPUT_REQUIRED / BLOCKED",
+      "EVIDENCE": "100 is vehicle/base interface; vehicle-specific structural interfaces are explicitly external-required.",
+      "GAP": "No controlled BIW drawing/interface package.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Map the logical load path and requested OEM interface evidence.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not claim BIW capacity or compatibility."
+    },
+    {
+      "ITEM": "Kinematic conflicts",
+      "CURRENT_STATUS": "PARTIAL / MODEL_ONLY",
+      "EVIDENCE": "Current model exposes q1 carriage translation and q2 seatback rotation; V7-R2 calls this a model result.",
+      "GAP": "Authoritative mechanism semantics/end-stops and physical joint behavior incomplete.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review model coordinate/state logic.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not claim physical DOF proof or absence of singularities."
+    },
+    {
+      "ITEM": "Packaging feasibility",
+      "CURRENT_STATUS": "PARTIAL",
+      "EVIDENCE": "V6 recognizes vehicle-specific packaging constraints; no H-point/clearance/manufacturing proof.",
+      "GAP": "Vehicle envelope, wiring, service, restraint/airbag integration unresolved.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review packaging dependencies and evidence requirements.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not treat visual fit as verified packaging."
+    },
+    {
+      "ITEM": "DFM / manufacturing definition",
+      "CURRENT_STATUS": "PARTIAL",
+      "EVIDENCE": "Current baseline contains DFM/DFA definitions; released PMI/GD&T = 0%.",
+      "GAP": "No released manufacturing drawings, tolerances, process/inspection release.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review manufacturability logic at definition level and identify release prerequisites.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not call it manufacturing-ready."
+    },
+    {
+      "ITEM": "Vehicle datum",
+      "CURRENT_STATUS": "OEM_INPUT_REQUIRED / BLOCKED",
+      "EVIDENCE": "Vehicle input request requires coordinate system, origin/datum and axis conventions.",
+      "GAP": "No authoritative OEM datum.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Specify exactly what datum package Rade needs.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not invent coordinates or transforms."
+    },
+    {
+      "ITEM": "Seat hardpoints",
+      "CURRENT_STATUS": "OEM_INPUT_REQUIRED / BLOCKED",
+      "EVIDENCE": "Vehicle request explicitly lists front/rear and left/right mounting references/coordinates.",
+      "GAP": "No authoritative hardpoints.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Check dependency of V7-100/110 on vehicle mounting definition.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not use concept rail spacing as OEM hardpoints."
+    },
+    {
+      "ITEM": "Restraint anchors",
+      "CURRENT_STATUS": "OEM_INPUT_REQUIRED / BLOCKED",
+      "EVIDENCE": "190 is vehicle-dependent; current PMI says vehicle data required.",
+      "GAP": "No vehicle-specific anchor coordinates/load specs.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review required restraint interface disclosure.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not assume belt anchorage compliance."
+    },
+    {
+      "ITEM": "Mass / CG / inertia",
+      "CURRENT_STATUS": "SOURCE_REQUIRED / TEST_REQUIRED",
+      "EVIDENCE": "B-Rep volume exists; mass/CG/inertia remain unresolved in current CAE dependency graph.",
+      "GAP": "No authoritative density/material mapping or accepted measured mass properties.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Define required measurement/model evidence.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not reuse illustrative human/seat masses as V7 facts."
+    },
+    {
+      "ITEM": "Materials",
+      "CURRENT_STATUS": "SOURCE_REQUIRED",
+      "EVIDENCE": "Material status is defined but grades/density/certificates are unresolved.",
+      "GAP": "No direct mapped supplier/OEM controlled allocation evidence.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review material-role disclosure and evidence chain.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not promote catalog/application guidance to V7 allocation."
+    },
+    {
+      "ITEM": "PMI / GD&T",
+      "CURRENT_STATUS": "SOURCE_REQUIRED / PARTIAL",
+      "EVIDENCE": "Critical characteristics are defined; released PMI/GD&T remains 0%.",
+      "GAP": "No authoritative released drawings/PMI/tolerance stacks.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review critical-characteristic logic.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not infer tolerances from concept CAD."
+    },
+    {
+      "ITEM": "Tolerances",
+      "CURRENT_STATUS": "SOURCE_REQUIRED",
+      "EVIDENCE": "V7 PMI register marks tolerance stack/source drawing requirements.",
+      "GAP": "Released dimensional tolerances unavailable.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Identify tolerances necessary for Stage-0 disclosure vs. later manufacturing release.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not invent ± values."
+    },
+    {
+      "ITEM": "Fasteners / preload",
+      "CURRENT_STATUS": "SOURCE_REQUIRED / TEST_REQUIRED",
+      "EVIDENCE": "IF-R4-01..09 fastener fields are null and supplier-controlled/test-required.",
+      "GAP": "Exact hardware, installation, torque and preload not assigned.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review fastener evidence requirements per interface.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not assume 8.8/10.9/12.9 or any torque/preload."
+    },
+    {
+      "ITEM": "Joint compliance",
+      "CURRENT_STATUS": "TEST_REQUIRED",
+      "EVIDENCE": "Interfaces are design-intent-defined but physical validation not done.",
+      "GAP": "No measured joint stiffness/compliance.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review which joints need characterization.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not treat geometric joint definitions as measured compliance."
+    },
+    {
+      "ITEM": "Absorber interface / 130",
+      "CURRENT_STATUS": "TEST_REQUIRED / SOURCE_REQUIRED",
+      "EVIDENCE": "130 is defined as ride-down path; current gap requires selected absorber and F-x/F-v/hysteresis/temp evidence.",
+      "GAP": "No selected/serialized and measured absorber characterization.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review cartridge concept and validation requirements.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not treat 180 mm or 18–22 kN design values as measured."
+    },
+    {
+      "ITEM": "Lock 170",
+      "CURRENT_STATUS": "TEST_REQUIRED",
+      "EVIDENCE": "V7 defines state transitions; gap register requires final physical implementation and fault/unintended-release tests.",
+      "GAP": "No physical lock characterization.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review state machine, fault cases and proof plan.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not assume safe transition, capture, or reset."
+    },
+    {
+      "ITEM": "Rebound 180",
+      "CURRENT_STATUS": "TEST_REQUIRED",
+      "EVIDENCE": "V7 defines reverse-motion control; measured law and secondary-excursion evidence missing.",
+      "GAP": "No physical rebound data.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review rebound-state disclosure and test observables.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not assume damping or stability."
+    },
+    {
+      "ITEM": "Serviceability",
+      "CURRENT_STATUS": "PARTIAL / DESIGN_DEFINED",
+      "EVIDENCE": "V6 discloses serviceable absorber cartridge and post-event inspection/replacement logic.",
+      "GAP": "No production service procedure or validated cycle/replacement data.",
+      "RISK": "Medium",
+      "WHAT_RADE_MAY_WORK_ON": "Review serviceability concept and evidence needs.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not infer field-service readiness."
+    },
+    {
+      "ITEM": "Assembly feasibility",
+      "CURRENT_STATUS": "PARTIAL",
+      "EVIDENCE": "Architecture is decomposed, but manufacturing drawings/fasteners/joints/clearances are incomplete.",
+      "GAP": "No controlled released assembly work instructions or inspection evidence.",
+      "RISK": "High",
+      "WHAT_RADE_MAY_WORK_ON": "Review assembly dependencies and access requirements.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not claim assembly release from CAD alone."
+    },
+    {
+      "ITEM": "Critical load paths",
+      "CURRENT_STATUS": "DESIGN_DEFINED / UNPROVEN",
+      "EVIDENCE": "V7 maps 100→110→120→130 and seatback/190 paths conceptually; no physical load proof.",
+      "GAP": "Structural capacity, joint/weld/fastener data missing.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review topology and evidence chain for each load path.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not equate topology with capacity."
+    },
+    {
+      "ITEM": "Manufacturing evidence",
+      "CURRENT_STATUS": "BLOCKED",
+      "EVIDENCE": "Readiness and executive reports state production release is not authorized; PPAP/APQP/tooling not evidenced.",
+      "GAP": "No released drawings, control plan, inspection, supplier production evidence.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Define release evidence checklist only.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not call prototype-ready manufacturing release."
+    },
+    {
+      "ITEM": "CAE input readiness",
+      "CURRENT_STATUS": "BLOCKED",
+      "EVIDENCE": "CAE graph shows missing material/density/mass/CG/inertia/contact/friction/absorber/load case inputs.",
+      "GAP": "Critical inputs remain unresolved; no authorized CAE execution.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review dependency ordering and input closure plan.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not run or claim CAE validation."
+    },
+    {
+      "ITEM": "Physical validation",
+      "CURRENT_STATUS": "NOT_ESTABLISHED",
+      "EVIDENCE": "Current reports explicitly state no T-OCS physical measurements/test results.",
+      "GAP": "No absorber/lock/rebound/system/ATD results.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review experimental plan and acceptance structure.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not call design validated."
+    },
+    {
+      "ITEM": "OEM / regulatory status",
+      "CURRENT_STATUS": "NOT_ESTABLISHED",
+      "EVIDENCE": "Astra report and readiness snapshot state OEM approval/regulatory compliance not established.",
+      "GAP": "No vehicle-specific compliance evidence.",
+      "RISK": "Critical",
+      "WHAT_RADE_MAY_WORK_ON": "Review required compliance evidence domains.",
+      "WHAT_RADE_MUST_NOT_ASSUME": "Do not issue compliance claims from research sources."
+    }
+  ],
+  "rade_stage0_input_manifest": [
+    {
+      "id": "R0-IN-01",
+      "data": "V7 stable reference architecture 100, 110L/110R, 120, 130, 140, 150L/150R, 160, 170, 180, 190, 200, 210 and J",
+      "class": "KNOWN / DISCLOSURE_DEFINED",
+      "status": "AVAILABLE",
+      "use": "Understand invention architecture and stable terminology."
+    },
+    {
+      "id": "R0-IN-02",
+      "data": "V7 core relationship: bilateral load paths + controlled ride-down + distinct seatback rotation path + event-state transitions + rebound + restraint availability",
+      "class": "KNOWN / DISCLOSURE_DEFINED",
+      "status": "AVAILABLE",
+      "use": "Assess technical disclosure coherence; not proof of performance or novelty."
+    },
+    {
+      "id": "R0-IN-03",
+      "data": "V6/V7 temporal state model S0 Normal, S1 Armed/Capture, S2 Ride-down, S3 Rotation Control, S4 Rebound Control, S5 Secure",
+      "class": "KNOWN / DISCLOSURE_DEFINED",
+      "status": "AVAILABLE",
+      "use": "Trace the temporal/mechanical sequence disclosed."
+    },
+    {
+      "id": "R0-IN-04",
+      "data": "V7 12-requirement audit P0-001..P0-012 and current statuses",
+      "class": "KNOWN",
+      "status": "AVAILABLE",
+      "use": "Know exactly what is defined vs. unproven."
+    },
+    {
+      "id": "R0-IN-05",
+      "data": "Current model-only results: 2 generalized coordinates, 180 mm model travel, q2 reference range −10..+25 deg",
+      "class": "MODEL_DERIVABLE",
+      "status": "AVAILABLE_WITH_LABEL",
+      "use": "Review as model evidence only."
+    },
+    {
+      "id": "R0-IN-06",
+      "data": "Current interface intent IF-R4-01..09",
+      "class": "DESIGN_DEFINED",
+      "status": "AVAILABLE",
+      "use": "Trace logical interfaces and identify evidence gaps."
+    },
+    {
+      "id": "R0-IN-07",
+      "data": "Current readiness/gap/evidence status and source map",
+      "class": "KNOWN",
+      "status": "AVAILABLE",
+      "use": "Bound every Stage-0 statement."
+    },
+    {
+      "id": "R0-IN-08",
+      "data": "Prior-art warning and claim-to-validation mapping from V6/V7",
+      "class": "KNOWN / DISCLOSURE_DEFINED",
+      "status": "AVAILABLE",
+      "use": "Patent-preparation review context; not legal opinion."
+    },
+    {
+      "id": "R0-IN-09",
+      "data": "Source revisions, artifact identities and evidence provenance metadata",
+      "class": "KNOWN",
+      "status": "AVAILABLE",
+      "use": "Traceability and disclosure integrity."
+    }
+  ],
+  "rade_stage0_disclosure_withholding": [
+    {
+      "id": "R0-WH-01",
+      "data": "Vehicle-specific datum, seat hardpoints, H-point/R-point, restraint anchor coordinates and BIW mounting details",
+      "class": "OEM_INPUT_REQUIRED",
+      "reason": "Not currently evidenced; must not be inferred."
+    },
+    {
+      "id": "R0-WH-02",
+      "data": "Unreleased exact manufacturing dimensions/tolerances/GD&T not present in authoritative released drawings",
+      "class": "SOURCE_REQUIRED",
+      "reason": "No release evidence; prevents false precision."
+    },
+    {
+      "id": "R0-WH-03",
+      "data": "Supplier-confirmed material/fastener allocations not backed by direct controlled evidence",
+      "class": "SOURCE_REQUIRED",
+      "reason": "Current supplier confirmation remains zero."
+    },
+    {
+      "id": "R0-WH-04",
+      "data": "Physical absorber, lock, rebound and joint characterization results not actually performed",
+      "class": "TEST_REQUIRED",
+      "reason": "No physical evidence exists."
+    },
+    {
+      "id": "R0-WH-05",
+      "data": "Mass/CG/inertia as project facts where not measured/controlled",
+      "class": "SOURCE_REQUIRED / TEST_REQUIRED",
+      "reason": "Current values unresolved."
+    },
+    {
+      "id": "R0-WH-06",
+      "data": "Vehicle crash pulse, initial crash conditions, validated restraint inputs and structural load cases",
+      "class": "OEM_INPUT_REQUIRED",
+      "reason": "External inputs remain unresolved."
+    },
+    {
+      "id": "R0-WH-07",
+      "data": "CAE outputs, injury metrics, safety factors or correlation claims not supported by authorized execution and acceptance criteria",
+      "class": "BLOCKED",
+      "reason": "CAE is not validated/executed for release use."
+    },
+    {
+      "id": "R0-WH-08",
+      "data": "Manufacturing-release artifacts, production supplier data, PPAP/APQP, tooling/SOP evidence",
+      "class": "BLOCKED / NOT_EVIDENCED",
+      "reason": "Production release is not established."
+    }
+  ],
+  "rade_pass_forbidden_conditions": [
+    "Any PASS on H-point/R-point without authoritative vehicle/package reference and traceable coordinate definition.",
+    "Any PASS on occupant packaging without vehicle-specific envelope, seating reference and clearance verification.",
+    "Any PASS on backrest angle/range/end-stops that treats model reference range or concept geometry as physical capability.",
+    "Any PASS on clearance/interference without adequate intended-contact classification and authoritative geometry/motion verification.",
+    "Any PASS on rail/hardpoint/BIW integration without controlled vehicle mounting geometry and relevant load-interface evidence.",
+    "Any PASS on materials without controlled material identity/grade/density/certification mapped to the intended V7 part.",
+    "Any PASS on PMI/GD&T/tolerances without released authoritative drawings/PMI and configuration control.",
+    "Any PASS on fasteners/preload without exact hardware identity plus controlled installation/preload data.",
+    "Any PASS on 130/170/180/joint behavior without actual required component characterization and traceable raw results.",
+    "Any PASS on critical load-path capacity based only on topology, geometric touching, or model motion.",
+    "Any PASS on CAE validation while critical inputs remain unresolved or the required solver/model execution evidence is absent.",
+    "Any PASS on crash/occupant safety, injury reduction, regulatory compliance, OEM approval, or manufacturing readiness without their corresponding evidence gates.",
+    "Any overall PASS that suppresses a known blocker or silently converts an assumption/reference/target into a confirmed fact."
+  ],
+  "current_external_evidence_status": {
+    "supplier_confirmed_materials": 0,
+    "supplier_confirmed_fasteners": 0,
+    "supplier_responses": 0,
+    "oem_responses": 0,
+    "physical_test_evidence": 0,
+    "cae_validation_evidence": 0
+  },
+  "forensic_position": {
+    "current_v7_r2_model_result": "2 DOF model result; 180 mm model travel; q2 reference range -10..+25 deg",
+    "current_cad_boundary": "Static CAD/model evidence does not establish authoritative vehicle hardpoints, physical end-stops, production tolerances, or crash safety.",
+    "r4_1_boundary": "R4.1 is frozen/immutable; current audit preserves its historical SHA/readback claims but does not substitute unsupported fresh extraction.",
+    "overall": "Proceed to Rade Stage-0 only as an engineering/patent disclosure review with explicit evidence boundaries; fail closed on any engineering PASS."
+  },
+  "recommendation": "RADE_STAGE0_ALLOWED_AS_DISCLOSURE_REVIEW_ONLY; ENGINEERING_PASS_FORBIDDEN_WHERE_CRITICAL_EVIDENCE_IS_MISSING"
+}
