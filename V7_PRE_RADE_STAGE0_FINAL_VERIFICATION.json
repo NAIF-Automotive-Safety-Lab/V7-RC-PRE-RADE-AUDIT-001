@@ -1,0 +1,19 @@
+{
+  "release_state": "FINAL_VERIFIED",
+  "checks_required": 10,
+  "checks_passed": 10,
+  "status": "PASS",
+  "checks": [
+    "CSV serialization + round-trip parse",
+    "JSON structural integrity",
+    "No ephemeral file identifiers in external-facing files",
+    "Exact Rade-facing S0-S5 vocabulary only",
+    "Non-engineering strategy material excluded",
+    "R0-IN-02 exact neutral wording",
+    "Rade scope limited to nine topics",
+    "Commercial boundary is one fixed-price result",
+    "Fail-closed boundaries preserved",
+    "Final table schema and disclosure boundary"
+  ],
+  "final_content_reverified": true
+}

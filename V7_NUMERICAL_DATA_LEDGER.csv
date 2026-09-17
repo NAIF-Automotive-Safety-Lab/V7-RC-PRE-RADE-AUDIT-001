@@ -1,0 +1,148 @@
+VALUE,UNIT,PARAMETER,SOURCE,PAGE_LOCATION,REFERENCE,STATUS,VALIDITY,CONFLICT,USE_ALLOWED_Y_N,NOTES
+500,mm,Overall width,V7 R0 / R1,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+520,mm,Overall depth,V7 R0 / R1,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+860,mm,Overall height,V7 R0 / R1,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+25,deg,Nominal rearward recline,V7 R0 / R1,R0/R1 package,160/J,DESIGN_ASSUMPTION,engineering concept / not release,N,Y,Use only as explicitly labeled source assumption.
+480,mm,Rail nominal length,V7 R0 / R1,R0/R1 package,110L/110R,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+420,mm,Rail spacing,V7 R0 / R1,R0/R1 package,110L/110R,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+450,mm,Carriage width,V7 R0 / R1,R0/R1 package,120,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+360,mm,Carriage length/depth,V7 R0 / R1,R0/R1 package,120,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+450,mm,Seat pan width,V7 R0 / R1,R0/R1 package,140,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+470,mm,Seat pan depth,V7 R0 / R1,R0/R1 package,140,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+450,mm,Seatback width,V7 R0 / R1,R0/R1 package,160,DESIGN_ASSUMPTION,engineering concept / not release,Y,N,Use only as explicitly labeled source assumption.
+620,mm,Seatback height,V7 R0 / R1,R0/R1 package,160,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+180,mm,Ride-down stroke target,V7 R0 / R1 + P0 firewall,R0/R1 package,120/130L/130R,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+±25,mm,Lateral adjustment concept,V7 R0,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+0,mm,H-point placeholder X,V7 R0,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+185,mm,H-point placeholder Y,V7 R0,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+330,mm,H-point placeholder Z,V7 R0,R0/R1 package,SYSTEM,DESIGN_ASSUMPTION,engineering concept / not release,N,N,Use only as explicitly labeled source assumption.
+520×520×30,mm,Current reconstructed base block,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,100,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"40×520×120 at X=±240, Z=15",mm,Current reconstructed vertical boxes,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,100,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"40×480×30 at Y=±210, Z=30",mm,Current reconstructed cross-members,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,100,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+420×38×42,mm,Current reconstructed rail primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,110L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+420×24×28,mm,Current reconstructed secondary rail/guide,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,110L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+Y=-210; Z=105 and 145,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,110L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+420×38×42,mm,Current reconstructed rail primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,110R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+420×24×28,mm,Current reconstructed secondary rail/guide,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,110R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+Y=+210; Z=105 and 145,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,110R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+470×460×28,mm,Current reconstructed carriage primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,120,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"55×60×40 at Y=±210, Z=205",mm,Current reconstructed guide blocks,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,120,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+260×44×44,mm,Current reconstructed body primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,130L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R22×60 along X,mm,Current reconstructed cylindrical element,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,130L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+Y=-180; Z≈220/242,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,130L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+260×44×44,mm,Current reconstructed body primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,130R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R22×60 along X,mm,Current reconstructed cylindrical element,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,130R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+Y=+180; Z≈220/242,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,130R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+420×430×22,mm,Current reconstructed pan primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,140,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+420×35×45,mm,Current reconstructed side members,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,140,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+X=165; Y=±180; Z=215,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,140,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+30×24×300,mm,Current reconstructed link primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,150L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R14×24 along Y,mm,Current reconstructed cylinder,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,150L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"(-145,-205,370)",mm,Current reconstructed anchor origin,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,150L,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+30×24×300,mm,Current reconstructed link primitive,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,150R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R14×24 along Y,mm,Current reconstructed cylinder,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,150R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"(-145,+205,370)",mm,Current reconstructed anchor origin,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,150R,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+32×50×620 (2),mm,Current reconstructed uprights,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,160,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+32×410×50 (2),mm,Current reconstructed cross-members,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,160,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+X=-185; Y=±205; Z=225; cross Z=235/820,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,160,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+90×60×45,mm,Current reconstructed housing,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,170,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R12×60 along Y,mm,Current reconstructed pin,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,170,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+18×54×18,mm,Current reconstructed lock block,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,170,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"housing (-80,0,320); pin (-55,-30,342)",mm,Current reconstructed locations,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,170,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+180×50×50,mm,Current reconstructed housing,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,180,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R18×70 along X,mm,Current reconstructed cylinder,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,180,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"body (115,0,250); cyl (25,0,275)",mm,Current reconstructed locations,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,180,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+45×40×60 (2),mm,Current reconstructed anchor blocks,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,190,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+X=120; Y=±235; Z=560,mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,190,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+24×260 and 24×320,mm,Current reconstructed loft profiles,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,200,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+120,mm,Current reconstructed longitudinal offset,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,200,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+Y=±200,mm,Current reconstructed lateral placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,200,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+100×80×8,mm,Current reconstructed instrument plate,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,210,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R6×20 (2),mm,Current reconstructed bosses,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,210,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"plate (80,0,335); bosses X=110, Y=±28, Z=343",mm,Current reconstructed placement,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,210,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+R18×50 along Y (2),mm,Current reconstructed hinge cylinders,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,J,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+"X=-185; Y=-235,+185; Z=270",mm,Current reconstructed locations,V7_RECON_SCRIPT,CAD_NATIVE/v7_engineering_reconstruction.py,J,MODEL_DERIVED,model geometry only,N,N,Derived from current reconstruction; not a released dimension.
+40,solids,R0 STEP solid count,R0 STEP readback,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+35,solids,R1 STEP solid count,R1 STEP readback,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+21,solids,Current hierarchical STEP solid count,Current reconstruction readback,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+16,items,Current BOM functional item count,Current BOM,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+635,mm,Current assembly X extent,Current hierarchical STEP,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+900,mm,Current assembly Y extent,Current hierarchical STEP,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+870,mm,Current assembly Z extent,Current hierarchical STEP,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+0..180,mm,q1 model limits,V7_R4_MODEL,current model,120,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+-10..25,deg,q2 model limits,V7_R4_MODEL,current model,160,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+2,DOF,mechanism DOF model result,V7_R4_EXEC_PROOF,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+361,samples,R4 execution sample count,V7_R4_EXECUTION,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+181,samples,R2 execution sample count,V7_R2_EXECUTION,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+257.142857,mm/s,R4 max q1 velocity,V7_R4_EXECUTION,current model,120,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+-300,mm/s,R4 min q1 velocity,V7_R4_EXECUTION,current model,120,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+180,mm/s,R2 q1 velocity,V7_R2_EXECUTION,current model,120,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+38.888889,deg/s,R4 q2 omega max,V7_R4_EXECUTION,current model,160,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+35,deg/s,R2 q2 omega,V7_R2_EXECUTION,current model,160,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+0..1,s,R4 model clock,V7_R4_EXECUTION,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+0..1,s,R2 model clock,V7_R2_EXECUTION,current model,SYSTEM,MODEL_DERIVED,execution/model result only,N,N,Do not treat as physical crash result.
+13560000.0,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,100,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+932400.0,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,110L,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+932400.0,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,110R,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+6317599.999999999,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,120,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+533770.6168867504,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,130L,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+533770.6168867504,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,130R,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+5028450.0,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,140,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+227083.53888207264,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,150L,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+227083.53888211586,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,150R,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+3176000.0,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,160,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+256571.68026350642,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,170,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+485625.6606917095,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,180,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+216000.00000000006,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,190,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+1670400.0000000931,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,200,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+66714.33605270136,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,210,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+101787.60197630928,mm3,B-Rep volume,V7_R5_MASS,V7_MASS_CG_INERTIA_R5.json,J,MODEL_DERIVED,geometry-derived,N,N,Volume is not a mass property.
+180,mm,Ride-down stroke target,P0_FIREWALL,P0_PARAMETER_FIREWALL.json,P0,DESIGN_ASSUMPTION,firewall classification,N,N,Reference/target only; not validated.
+18–22,kN,Absorber force target,P0_FIREWALL,P0_PARAMETER_FIREWALL.json,P0,DESIGN_ASSUMPTION,firewall classification,N,N,Reference/target only; not validated.
+25.6,g,Source study pulse,P0_FIREWALL,P0_PARAMETER_FIREWALL.json,P0,DESIGN_ASSUMPTION,firewall classification,N,N,Reference/target only; not validated.
+47.5→24,deg,Source study seatback rotation,P0_FIREWALL,P0_PARAMETER_FIREWALL.json,P0,DESIGN_ASSUMPTION,firewall classification,N,N,Reference/target only; not validated.
+≥2.5,g,Trigger reference,P0_FIREWALL,P0_PARAMETER_FIREWALL.json,P0,DESIGN_ASSUMPTION,firewall classification,N,N,Reference/target only; not validated.
+<20,ms,Lock timing reference,P0_FIREWALL,P0_PARAMETER_FIREWALL.json,P0,DESIGN_ASSUMPTION,firewall classification,N,N,Reference/target only; not validated.
+56,km/h,PMHS study test configuration,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+25 / 45,deg,PMHS seatback/rear-facing configuration,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+53.9,km/h,FMVSS-214 MDB laboratory mapping,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+1000,HIC,HIC criterion cited by source procedure,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+44,mm,male rib deflection criterion,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+2.5,kN,abdominal criterion,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+6.0,kN,pubic symphysis criterion,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+373,N·m,seatback rearward moment requirement cited in source study,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+16,g,baseline virtual pulse,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+25.6,g,scaled pulse,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+75,kg,nominal source-study occupant,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+15.6,m/s,nominal source-study initial velocity,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+9.1,kJ,nominal source-study kinetic energy,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+25,deg,screening target seatback rotation,V5_REPORT,V5 source study,SYSTEM,DESIGN_ASSUMPTION,legacy/source value,N,N,Not current V7 fact.
+25.6,g,acceleration,V7_DISCLOSURE,p.6: 25.6 g scaled pulse                           Used in NHTSA/SAE research simulation          Design-study input only until T-OCS validates a specific pulse.,160/130/SYSTEM,SOURCE_SUPPORTED,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+180,mm,length,V7_DISCLOSURE,p.6: 180 mm stroke                                 Concept-board design target                    Not a measured crash result.,160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+18–22,kN,force range,V7_DISCLOSURE,p.6: 18-22 kN force range                          Concept-board design target                    Not measured absorber performance.,160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+25.6,g,acceleration,V7_DISCLOSURE,p.11: The supplied 2025 NHTSA/SAE rear-impact study is especially relevant: it reported collapse-like kinematics at a 25.6 g scaled,160/130/SYSTEM,SOURCE_SUPPORTED,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+180,mm,length,V7_DISCLOSURE,"p.16: package uses the nominal 180 mm concept stroke, but this remains a design assumption until derived from a vehicle-specific",160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+400,ms,time,V7_DISCLOSURE,"p.17: than claiming a fixed ""0-400 ms"" recipe.",160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+400,ms,time,V7_DISCLOSURE,"p.29: FIG. 7 - Crash Load Path Analysis, 0-400 ms.",160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+25.6,g,acceleration,V6_DISCLOSURE,p.2: The supplied 2025 NHTSA/SAE rear-impact study is especially relevant: it reported collapse-like kinematics at a 25.6 g scaled,160/130/SYSTEM,SOURCE_SUPPORTED,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+180,mm,length,V6_DISCLOSURE,"p.7: package uses the nominal 180 mm concept stroke, but this remains a design assumption until derived from a vehicle-specific",160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+400,ms,time,V6_DISCLOSURE,"p.8: than claiming a fixed ""0-400 ms"" recipe.",160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+400,ms,time,V6_DISCLOSURE,"p.20: FIG. 7 - Crash Load Path Analysis, 0-400 ms.",160/130/SYSTEM,DESIGN_ASSUMPTION,disclosure engineering numeric,N,N,Engineering source value only; not automatically a T-OCS measured result.
+30250.000000000004,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-01,IF-R4-01,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[0.0, -191.0, 232.5]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-01,IF-R4-01,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+30250.000000000004,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-02,IF-R4-02,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[0.0, 191.0, 232.5]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-02,IF-R4-02,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+113574.99999999996,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-03,IF-R4-03,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[0.0, 0.0, 226.5]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-03,IF-R4-03,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+7671.875043127121,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-04,IF-R4-04,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[-20.0, 0.0, 360.0]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-04,IF-R4-04,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+303345.23168198584,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-05,IF-R4-05,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[-10.0, -180.0, 240.0]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-05,IF-R4-05,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+303345.23168198584,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-06,IF-R4-06,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[-10.0, 180.0, 240.0]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-06,IF-R4-06,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+11199.999999999993,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-07,IF-R4-07,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[-185.0, 0.0, 227.5]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-07,IF-R4-07,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+106752.60605471101,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-08,IF-R4-08,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[-185.00000000000003, -205.0, 538.6640315193571]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-08,IF-R4-08,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.
+67326.5357313047,mm3,Interface common volume,V7_R4_INTERFACE_GEOM,IF-R4-09,IF-R4-09,MODEL_DERIVED,B-Rep common volume,N,N,Geometric evidence only.
+"[-185.0, -10.0, 270.0]",mm,Interface relative position proxy,V7_R4_INTERFACE_GEOM,IF-R4-09,IF-R4-09,MODEL_DERIVED,proxy coordinate,N,N,Not a released datum.

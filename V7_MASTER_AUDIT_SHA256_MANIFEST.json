@@ -1,0 +1,49 @@
+{
+  "MANIFEST_TYPE": "V7_MASTER_AUDIT_SHA256_MANIFEST",
+  "MANIFEST_REVISION": "V7-MASTER-AUDIT-002",
+  "PROJECT_COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+  "HASH_ALGORITHM": "SHA-256",
+  "ARTIFACTS": [
+    {
+      "PATH": "V7_MASTER_DATA_COMPLETENESS_AUDIT.md",
+      "SHA256": "754139f2cae2401b6ddf79920b17bc33f07935bb4cbce5ab1314e8c924b0bc27",
+      "SIZE_BYTES": 22986
+    },
+    {
+      "PATH": "V7_MASTER_DATA_COMPLETENESS_AUDIT.json",
+      "SHA256": "4c2779de3a736d4ac5efb5d0d4006ed80afca357fb3d41785a54c0141a406b54",
+      "SIZE_BYTES": 27137
+    },
+    {
+      "PATH": "V7_NUMERICAL_DATA_LEDGER.csv",
+      "SHA256": "cc0f5b2542f0dfb326941855457edcd31586c728f2dd7e4ef925d463004abc0c",
+      "SIZE_BYTES": 26917
+    },
+    {
+      "PATH": "V7_ENGINEERING_PARAMETER_REGISTER.csv",
+      "SHA256": "93fe36efd5e361144f1cd47341b86f50c4845a0d81f570ff2fdbf7fafe46717a",
+      "SIZE_BYTES": 726030
+    },
+    {
+      "PATH": "V7_CONFLICT_REGISTER.csv",
+      "SHA256": "f7954f57eb06039e844792c59df19d630261847da13b85c7529343f528c91d78",
+      "SIZE_BYTES": 5903
+    },
+    {
+      "PATH": "V7_MASTER_CRITICAL_GAP_REGISTER.csv",
+      "SHA256": "70149efbf7dffdfd6af9fa9b538860e88885741401527eee6164d37a4383e6ed",
+      "SIZE_BYTES": 6884
+    },
+    {
+      "PATH": "V7_RADE_DISCLOSURE_PREPARATION_MATRIX.csv",
+      "SHA256": "2f8586e2a40985144f343e326b5c06a109380754eda4fa1eca8a74f24f5d141e",
+      "SIZE_BYTES": 1604
+    },
+    {
+      "PATH": "V7_MASTER_DATA_COMPLETENESS_EXECUTIVE_SUMMARY.md",
+      "SHA256": "fd77a0ece4965aef4a374a725e24e981f95f5d39d9f8d19932bcc2ef75707c7f",
+      "SIZE_BYTES": 3516
+    }
+  ],
+  "SELF_HASH_RULE": "This manifest does not embed its own hash because doing so would be recursively self-referential. Its final file hash is recorded in the independent verification transcript / delivery manifest outside the file."
+}

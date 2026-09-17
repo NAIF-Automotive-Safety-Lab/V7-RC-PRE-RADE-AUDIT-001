@@ -1,0 +1,43 @@
+{
+  "required_deliverables": [
+    "V7_MASTER_DATA_COMPLETENESS_AUDIT.md",
+    "V7_MASTER_DATA_COMPLETENESS_AUDIT.json",
+    "V7_NUMERICAL_DATA_LEDGER.csv",
+    "V7_ENGINEERING_PARAMETER_REGISTER.csv",
+    "V7_CONFLICT_REGISTER.csv",
+    "V7_MASTER_CRITICAL_GAP_REGISTER.csv",
+    "V7_RADE_DISCLOSURE_PREPARATION_MATRIX.csv",
+    "V7_MASTER_DATA_COMPLETENESS_EXECUTIVE_SUMMARY.md",
+    "V7_MASTER_AUDIT_SHA256_MANIFEST.json"
+  ],
+  "counts": {
+    "parameter_register": 2200,
+    "numerical_ledger": 147,
+    "conflicts": 19,
+    "critical_gaps": 30
+  },
+  "state_vocabulary": [
+    "S0 Normal",
+    "S1 Armed/Capture",
+    "S2 Pelvis Lock/Capture",
+    "S3 Ride-Down",
+    "S4 Rotation/Rebound",
+    "S5 Secure/Post-event"
+  ],
+  "status_vocabulary": [
+    "CAE_REQUIRED",
+    "CONFLICTING",
+    "DESIGN_ASSUMPTION",
+    "KNOWN",
+    "MISSING",
+    "MODEL_DERIVED",
+    "NOT_APPLICABLE",
+    "OEM_INPUT_REQUIRED",
+    "PARTIAL",
+    "SOURCE_SUPPORTED",
+    "SUPPLIER_INPUT_REQUIRED",
+    "TEST_REQUIRED"
+  ],
+  "decision": "FAIL-CLOSED MASTER DATA COMPLETENESS AUDIT",
+  "Rade_final_package_generated": false
+}

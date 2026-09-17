@@ -1,195 +1,140 @@
 # V7 FINAL PRE-RADE ENGINEERING AUDIT
 
-**TASK_ID:** `V7-RC-PRE-RADE-AUDIT-001`  
+**RELEASE_STATE:** `FINAL_VERIFIED`  
+**TASK_ID:** `V7-RC-PRE-RADE-AUDIT-001-CORRECTION`  
 **Decision:** `FAIL_CLOSED_ENGINEERING_DISCLOSURE_RECOMMENDATION`  
 **Classification:** `V7_FROZEN_RESEARCH_ENGINEERING_DEFINITION_BASELINE`
 
-## 1. Executive engineering decision
-The defensible disclosure position is **fail-closed**: Rade Stage-0 may review the invention disclosure, architecture, claim/evidence relationships, current engineering definitions, and the explicit evidence gaps; Rade must not turn the current package into a manufacturing, crash-safety, or CAE validation result. The source record states that the V7 baseline remains a research/engineering-definition package, not a manufacturing release or safety-validation result. [SRC: V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json; V7_ENGINEERING_EXECUTIVE_REPORT.md; V7_ENGINEERING_READINESS_SNAPSHOT.md]
+## 1. Correction gate
+This corrected package is read-only with respect to engineering definition: no V7 geometry change, no Design Intent change, no R4.1 mutation, and no R4.2 creation. The correction is documentation, serialization, disclosure-boundary and release-control work only.
 
-### Non-negotiable status
-- `MANUFACTURING_READY = NOT_ESTABLISHED`
-- `CRASH_VALIDATED = NOT_ESTABLISHED`
-- `CAE_VALIDATED = NOT_ESTABLISHED`
-- `OEM_APPROVAL = NOT_ESTABLISHED`
-- `PHYSICAL_VALIDATION = NOT_ESTABLISHED`
-- `MANUS_VERIFICATION = NOT_CLAIMED`
+## 2. Engineering decision
+The defensible Stage-0 position is **fail-closed**. Rade may review the disclosed engineering architecture and the approved Stage-0 topics, but must not convert missing vehicle data, model-only motion, concept targets, unresolved interfaces, or absent validation evidence into engineering PASS.
 
-## 2. What V7 actually discloses
-V7 fixes the stable reference vocabulary: 100 vehicle/base interface; 110L/110R bilateral longitudinal load paths; 120 carriage; 130 ride-down; 140 pelvic control; 150L/150R seatback rotation-control links; 160 seatback frame; 170 multi-state lock; 180 rebound control; 190 restraint interface; 200 torso/head guidance; 210 sensor/trigger interface. The V7 disclosure also defines the inventive center as the relationship between bilateral load paths, controlled ride-down, a mechanically distinct seatback-rotation path, event-dependent state transitions, rebound control, and continued restraint availability. [SRC: T_OCS_V7_Patent_Draft_Invention_Disclosure(2).pdf]
+Non-negotiable status: `MANUFACTURING_READY = NOT_ESTABLISHED`; `CRASH_VALIDATED = NOT_ESTABLISHED`; `CAE_VALIDATED = NOT_ESTABLISHED`; `PHYSICAL_VALIDATION = NOT_ESTABLISHED`; `MANUS_VERIFICATION = NOT_CLAIMED`.
 
-V6 supplies the temporal sequence S0 Normal → S1 Armed/Capture → S2 Ride-down → S3 Rotation control → S4 Rebound control → S5 Secure, and maps each claimed relationship to physical/CAE observables. It also explicitly states that rendered industrial-design views do not prove H-point compliance, belt anchorage compliance, occupant clearance, manufacturability, or crash performance. [SRC: T_OCS_V6_Patent_Draft_Invention_Disclosure(1).pdf]
+## 3. Rade Stage-0 approved scope
+H/R-point dependency; occupant packaging; backrest angle/motion; clearance/interference; rail/hardpoint integration; BIW interface logic; kinematic conflicts; packaging feasibility; DFM/DFA.
+No other engineering work is commissioned under this Stage-0 boundary. Upstream blockers outside this list may be recorded, but not closed by Rade Stage-0.
 
-## 3. Current audit facts and hard gaps
-The current 12-requirement audit has **0 fully closed and 12 partial**. The unresolved items include vehicle datum/hardpoints/H-point, rail critical geometry/tolerances, authoritative joint semantics, absorber characterization, physical lock/rebound evidence, restraint anchors, material certificates, PMI/GD&T, fasteners, joint compliance, and physical/CAE correlation. [SRC: V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json]
+## 4. Neutral engineering disclosure
+R0-IN-02: **Controlled coordination of seat translation, seatback motion, occupant packaging and structural load paths during a dynamic event.**
 
-The V7-R2 forensic report records a model result of two generalized coordinates—carriage translation and seatback rotation—with 180 mm model travel. It explicitly labels these as model results and retains unresolved external/material/physical evidence. [SRC: V7_R2_EXECUTIVE_REPORT.md]
+## 5. Rade-facing dynamic state vocabulary
+The only Stage-0 S0–S5 vocabulary is:
+- S0 Normal
+- S1 Armed/Capture
+- S2 Pelvis Lock/Capture
+- S3 Ride-Down
+- S4 Rotation/Rebound
+- S5 Secure/Post-event
 
-The current readiness snapshot lists CAE as blocked, DV as blocked, PV as blocked, DFM/DFA as partial, and identifies OEM/vehicle data, controlled materials, absorber/lock/rebound characterization, fastener/joint evidence, correlation, and production drawing/inspection evidence as critical blockers. [SRC: V7_ENGINEERING_READINESS_SNAPSHOT.md]
+## 6. H/R-point and occupant packaging
+**H/R-point dependency:** vehicle-specific coordinates and package definitions remain required inputs. No placeholder H/R-point may be used to generate a PASS.
+**Occupant packaging:** review dependency chains, seating reference, motion envelope and clearance requirements; do not infer anthropometric or regulatory compliance from concept graphics.
 
-## 4. H-point / R-point and occupant packaging audit
-**Disposition: BLOCKED for vehicle-specific engineering PASS.** The available source set treats H-point/vehicle hardpoints as external inputs. V6 expressly states that the design-intent renderings do not prove H-point compliance or occupant clearance, and the current vehicle input request requires a vehicle coordinate system, mounting hardpoints, package geometry, and restraint anchor references. [SRC: T_OCS_V6_Patent_Draft_Invention_Disclosure(1).pdf; VEHICLE_INPUT_REQUEST_R5.json]
+## 7. Backrest motion, clearance and kinematic conflicts
+The current model exposes translation and seatback rotation as model coordinates. The reported 180 mm travel and q2 reference range −10..+25 deg remain model-only and are not physical capability statements. Continuous-motion clearance and physical end-stops are not released evidence.
 
-Rade may review the packaging concept and the dependency structure. Rade must not insert a placeholder H-point, R-point, hardpoint set, or occupant envelope and then mark packaging PASS.
+## 8. Rail, hardpoint and BIW integration
+110L/110R and 100 define the disclosed load/interface architecture, but vehicle datum, seat hardpoints and BIW interface geometry remain external dependencies. Do not invent spacing, coordinates, fixture geometry or structural capacity.
 
-## 5. Backrest angle / range / end-stop audit
-**Disposition: MODEL-ONLY / SOURCE-REQUIRED.** The present model uses q2 for seatback rotation and reports a reference range of −10° to +25°; that is model-level information. The CAD audit states a static STEP does not prove physical end-stops or usable stroke. [SRC: V7_R2_EXECUTIVE_REPORT.md; T_OCS_V0_CAD_VALIDATION_REPORT.pdf]
+## 9. DFM / DFA
+DFM/DFA logic may be reviewed. Manufacturing release is not established. Released drawings, PMI/GD&T, tolerances, materials, fasteners, joint installation, inspection and production evidence remain outside this Stage-0 closure.
 
-The Stage-0 disclosure can show the claimed relationship between translation and rotation control. It cannot call the reference angular range a measured mechanical capability.
+## 10. Evidence that must remain unpromoted to project fact
+- `R0-WH-01` — Vehicle-specific datum, seat hardpoints, H-point/R-point, restraint anchor coordinates and BIW mounting details — **OEM_INPUT_REQUIRED**: Not currently evidenced; must not be inferred.
+- `R0-WH-02` — Unreleased exact manufacturing dimensions/tolerances/GD&T not present in authoritative released drawings — **SOURCE_REQUIRED**: No release evidence; prevents false precision.
+- `R0-WH-03` — Supplier-confirmed material/fastener allocations not backed by direct controlled evidence — **SOURCE_REQUIRED**: No controlled supplier confirmation is established.
+- `R0-WH-04` — Physical absorber, lock, rebound and joint characterization results not actually performed — **TEST_REQUIRED**: No physical evidence exists.
+- `R0-WH-05` — Mass/CG/inertia as project facts where not measured/controlled — **SOURCE_REQUIRED / TEST_REQUIRED**: Current values unresolved.
+- `R0-WH-06` — Vehicle crash pulse, initial crash conditions, validated restraint inputs and structural load cases — **OEM_INPUT_REQUIRED**: External inputs remain unresolved.
+- `R0-WH-07` — CAE outputs, injury metrics, safety factors or correlation claims not supported by authorized execution and acceptance criteria — **BLOCKED**: CAE validation is not established.
+- `R0-WH-08` — Manufacturing-release artifacts, production supplier data, PPAP/APQP, tooling/SOP evidence — **BLOCKED / NOT_EVIDENCED**: Production release is not established.
 
-## 6. Clearance / interference / kinematic conflicts
-The V0 CAD forensic record distinguishes geometric intersections from engineering interference. Earlier analysis detected 69 intersections and required classification; later V7-R2 records state three hard/modeling interferences were corrected and nine retained interfaces were treated as intentional. This is useful evidence of interface analysis, not a release-level continuous-motion clearance certificate. [SRC: T_OCS_V0_CAD_VALIDATION_REPORT.pdf; V7_R2_EXECUTIVE_REPORT.md]
+## 11. Mandatory final table
 
-The correct Stage-0 language is therefore **interface classification performed at model level; continuous physical clearance and production tolerance verification remain open**.
-
-## 7. Rail / hardpoint / BIW interface audit
-110L/110R are disclosed as bilateral load paths, and 100 as the vehicle/base interface. However, the vehicle-specific datum, mounting hardpoints, package constraints, and structural interfaces remain OEM-required. The current vehicle request expressly prohibits substitute coordinates or assumptions. [SRC: V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json; VEHICLE_INPUT_REQUEST_R5.json]
-
-Therefore Rade may inspect load-path logic and identify the missing vehicle data; Rade must not certify BIW compatibility or rail hardpoint fit.
-
-## 8. DFM / manufacturing definition
-The package contains DFM/DFA definitions, but released PMI/GD&T is 0% in the current engineering baseline and the manufacturing release is explicitly not authorized. Manufacturing-critical evidence remains incomplete for drawings, tolerances, materials, fasteners, joints, inspection, tooling, PPAP/APQP, and production controls. [SRC: V7_ENGINEERING_EXECUTIVE_REPORT.md; V7_ENGINEERING_READINESS_SNAPSHOT.md]
-
-Calling the package manufacturing-ready now would be paper engineering. The disclosed architecture can be reviewed; a manufacturing release cannot.
-
-## 9. Materials, mass properties, fasteners and joints
-Material identity/grade/density/certification remains unresolved. Mass/CG/inertia remain unresolved because density/material mapping is not authoritative. The fastener register keeps interface hardware fields null and supplier-controlled/test-required. Joint compliance remains a test-required gap. [SRC: V7_ENGINEERING_EXECUTIVE_REPORT.md; V7_CAE_DEPENDENCY_GRAPH_R5.json; V7_FASTENER_JOINT_DEFINITION_R5.json]
-
-No 8.8/10.9/12.9 class, torque, preload, or strength property should be turned into a V7 fact without direct controlled evidence.
-
-## 10. 130 / 170 / 180 audit
-- **130 Ride-down:** disclosed as the energy-management path; required characterization is F-x, F-v, hysteresis, temperature/cycling; no measured curve is established.
-- **170 Lock:** disclosed as a multi-state mechanism; physical implementation, fault containment, unintended-release testing and validated trigger/timing remain open.
-- **180 Rebound:** disclosed as reverse-motion control; measured force/velocity behavior and secondary-excursion evidence remain open.
-[SRC: V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json; T_OCS_V7_Patent_Draft_Invention_Disclosure(2).pdf]
-
-## 11. Unified engineering-input closure
-The current unified evidence picture is:
-
-| Node | Classification | Current disposition |
-|---|---|---|
-| Geometry | KNOWN / MODEL_DERIVABLE | Model/reconstruction available; authoritative production boundary incomplete |
-| Material | SOURCE_REQUIRED | No direct controlled allocation evidence |
-| Density | SOURCE_REQUIRED | Unresolved |
-| Mass / CG / Inertia | SOURCE_REQUIRED / TEST_REQUIRED | Unresolved |
-| Joints | DESIGN_DEFINED | Semantics/physical compliance incomplete |
-| Fasteners | SOURCE_REQUIRED / TEST_REQUIRED | Exact hardware/installation not allocated |
-| Contact | MODEL_DEFINED / SOURCE_REQUIRED | Interface semantics incomplete |
-| Friction | TEST_REQUIRED | No project-specific measured law |
-| Absorber | TEST_REQUIRED | No measured F-x/F-v/hysteresis/temp |
-| Lock | TEST_REQUIRED | No physical state/fault evidence |
-| Rebound | TEST_REQUIRED | No measured reverse-motion behavior |
-| Vehicle load case | OEM_INPUT_REQUIRED | Not available |
-| Crash pulse | OEM_INPUT_REQUIRED | Not available |
-| Restraint | OEM_INPUT_REQUIRED / TEST_REQUIRED | Vehicle anchors/dynamic behavior not established |
-| Boundary conditions | OEM_INPUT_REQUIRED / SOURCE_REQUIRED | Vehicle/fixture-specific evidence incomplete |
-| Acceptance criteria | KNOWN / SOURCE_REQUIRED | Methodology exists; configuration-specific final acceptance remains to be established |
-
-## 12. Exact V7 data Rade needs
-- **R0-IN-01 — V7 stable reference architecture 100, 110L/110R, 120, 130, 140, 150L/150R, 160, 170, 180, 190, 200, 210 and J** — `KNOWN / DISCLOSURE_DEFINED` — Understand invention architecture and stable terminology.
-- **R0-IN-02 — V7 core relationship: bilateral load paths + controlled ride-down + distinct seatback rotation path + event-state transitions + rebound + restraint availability** — `KNOWN / DISCLOSURE_DEFINED` — Assess technical disclosure coherence; not proof of performance or novelty.
-- **R0-IN-03 — V6/V7 temporal state model S0 Normal, S1 Armed/Capture, S2 Ride-down, S3 Rotation Control, S4 Rebound Control, S5 Secure** — `KNOWN / DISCLOSURE_DEFINED` — Trace the temporal/mechanical sequence disclosed.
-- **R0-IN-04 — V7 12-requirement audit P0-001..P0-012 and current statuses** — `KNOWN` — Know exactly what is defined vs. unproven.
-- **R0-IN-05 — Current model-only results: 2 generalized coordinates, 180 mm model travel, q2 reference range −10..+25 deg** — `MODEL_DERIVABLE` — Review as model evidence only.
-- **R0-IN-06 — Current interface intent IF-R4-01..09** — `DESIGN_DEFINED` — Trace logical interfaces and identify evidence gaps.
-- **R0-IN-07 — Current readiness/gap/evidence status and source map** — `KNOWN` — Bound every Stage-0 statement.
-- **R0-IN-08 — Prior-art warning and claim-to-validation mapping from V6/V7** — `KNOWN / DISCLOSURE_DEFINED` — Patent-preparation review context; not legal opinion.
-- **R0-IN-09 — Source revisions, artifact identities and evidence provenance metadata** — `KNOWN` — Traceability and disclosure integrity.
-
-These are the minimum disclosure inputs for a controlled Stage-0 review. They are not a substitute for later engineering validation.
-
-## 13. V7 data that must remain withheld from factual promotion
-- **R0-WH-01 — Vehicle-specific datum, seat hardpoints, H-point/R-point, restraint anchor coordinates and BIW mounting details** — `OEM_INPUT_REQUIRED` — Not currently evidenced; must not be inferred.
-- **R0-WH-02 — Unreleased exact manufacturing dimensions/tolerances/GD&T not present in authoritative released drawings** — `SOURCE_REQUIRED` — No release evidence; prevents false precision.
-- **R0-WH-03 — Supplier-confirmed material/fastener allocations not backed by direct controlled evidence** — `SOURCE_REQUIRED` — Current supplier confirmation remains zero.
-- **R0-WH-04 — Physical absorber, lock, rebound and joint characterization results not actually performed** — `TEST_REQUIRED` — No physical evidence exists.
-- **R0-WH-05 — Mass/CG/inertia as project facts where not measured/controlled** — `SOURCE_REQUIRED / TEST_REQUIRED` — Current values unresolved.
-- **R0-WH-06 — Vehicle crash pulse, initial crash conditions, validated restraint inputs and structural load cases** — `OEM_INPUT_REQUIRED` — External inputs remain unresolved.
-- **R0-WH-07 — CAE outputs, injury metrics, safety factors or correlation claims not supported by authorized execution and acceptance criteria** — `BLOCKED` — CAE is not validated/executed for release use.
-- **R0-WH-08 — Manufacturing-release artifacts, production supplier data, PPAP/APQP, tooling/SOP evidence** — `BLOCKED / NOT_EVIDENCED` — Production release is not established.
-
-"Withheld" here means **must not be presented as an established project fact** until the corresponding evidence gate is closed; it does not mean the owner is prohibited from sharing a clearly labeled unknown or gap.
-
-## 14. Conditions under which Rade is forbidden to issue PASS
-1. Any PASS on H-point/R-point without authoritative vehicle/package reference and traceable coordinate definition.
-2. Any PASS on occupant packaging without vehicle-specific envelope, seating reference and clearance verification.
-3. Any PASS on backrest angle/range/end-stops that treats model reference range or concept geometry as physical capability.
-4. Any PASS on clearance/interference without adequate intended-contact classification and authoritative geometry/motion verification.
-5. Any PASS on rail/hardpoint/BIW integration without controlled vehicle mounting geometry and relevant load-interface evidence.
-6. Any PASS on materials without controlled material identity/grade/density/certification mapped to the intended V7 part.
-7. Any PASS on PMI/GD&T/tolerances without released authoritative drawings/PMI and configuration control.
-8. Any PASS on fasteners/preload without exact hardware identity plus controlled installation/preload data.
-9. Any PASS on 130/170/180/joint behavior without actual required component characterization and traceable raw results.
-10. Any PASS on critical load-path capacity based only on topology, geometric touching, or model motion.
-11. Any PASS on CAE validation while critical inputs remain unresolved or the required solver/model execution evidence is absent.
-12. Any PASS on crash/occupant safety, injury reduction, regulatory compliance, OEM approval, or manufacturing readiness without their corresponding evidence gates.
-13. Any overall PASS that suppresses a known blocker or silently converts an assumption/reference/target into a confirmed fact.
-
-## 15. MANDATORY FINAL TABLE
 | ITEM | CURRENT STATUS | EVIDENCE | GAP | RISK | WHAT RADE MAY WORK ON | WHAT RADE MUST NOT ASSUME |
 |---|---|---|---|---|---|---|
-|Stable V7 architecture|KNOWN / DESIGN_DEFINED|V7 disclosure defines stable numerals 100–210 and their functional roles.|No authoritative manufacturing-level mapping for every physical detail.|High|Review the disclosed architecture and claim relationships.|Do not treat reference numerals or concept geometry as production facts.|
-|Core inventive relationship|KNOWN / DISCLOSURE_DEFINED|Bilateral longitudinal paths + controlled ride-down + distinct seatback rotation control + state transition + rebound + restraint availability.|Physical implementation and validation are not established.|High|Assess written-description coherence and claim-to-evidence traceability.|Do not assume novelty, patentability, enablement, or physical effectiveness.|
-|H-point / R-point|OEM_INPUT_REQUIRED|Current V7 evidence identifies H-point/vehicle hardpoints as unresolved external inputs; V6 explicitly says renderings do not prove H-point compliance.|No authoritative vehicle-specific H-point/R-point package.|High|Verify what vehicle/package definition is required for a Stage-0 review; identify missing datum/anthropometry references.|Do not substitute a placeholder H-point or concept dimension.|
-|Occupant packaging|OEM_INPUT_REQUIRED / PARTIAL|V6 states front/rear packaging is vehicle-dependent and renderings do not prove occupant clearance.|No vehicle-specific envelope/ATD seating proof.|High|Review packaging logic and enumerate required occupant envelope checks.|Do not assume concept boards satisfy packaging or anthropometry.|
-|Backrest angle / range / end-stops|MODEL_DERIVABLE / SOURCE_REQUIRED|Current model report shows q2 as model coordinate over a reference range; CAD reports state static geometry does not prove end-stops.|Authoritative stop geometry and physical stop proof are missing.|High|Review disclosed angle-control mechanism and required verification method.|Do not convert model range into physical seatback capability.|
-|Clearance / interference|PARTIAL|V7-R2 reports 9 retained intentional interfaces after prior correction; earlier V0 audit required explicit classification of intersections.|Release-level continuous-motion clearance and authoritative geometry are incomplete.|High|Review interface ownership and verification methodology.|Do not infer zero interference from a limited/static check.|
-|Rail / hardpoint integration|BLOCKED|110L/110R are design-defined; vehicle-specific hardpoints remain external/OEM required.|No authoritative vehicle hardpoints or fixture mapping.|Critical|Define exact data required to connect V7 rails to a target vehicle.|Do not invent spacing, coordinates, loads or BIW interfaces.|
-|BIW interface logic|OEM_INPUT_REQUIRED / BLOCKED|100 is vehicle/base interface; vehicle-specific structural interfaces are explicitly external-required.|No controlled BIW drawing/interface package.|Critical|Map the logical load path and requested OEM interface evidence.|Do not claim BIW capacity or compatibility.|
-|Kinematic conflicts|PARTIAL / MODEL_ONLY|Current model exposes q1 carriage translation and q2 seatback rotation; V7-R2 calls this a model result.|Authoritative mechanism semantics/end-stops and physical joint behavior incomplete.|High|Review model coordinate/state logic.|Do not claim physical DOF proof or absence of singularities.|
-|Packaging feasibility|PARTIAL|V6 recognizes vehicle-specific packaging constraints; no H-point/clearance/manufacturing proof.|Vehicle envelope, wiring, service, restraint/airbag integration unresolved.|High|Review packaging dependencies and evidence requirements.|Do not treat visual fit as verified packaging.|
-|DFM / manufacturing definition|PARTIAL|Current baseline contains DFM/DFA definitions; released PMI/GD&T = 0%.|No released manufacturing drawings, tolerances, process/inspection release.|Critical|Review manufacturability logic at definition level and identify release prerequisites.|Do not call it manufacturing-ready.|
-|Vehicle datum|OEM_INPUT_REQUIRED / BLOCKED|Vehicle input request requires coordinate system, origin/datum and axis conventions.|No authoritative OEM datum.|Critical|Specify exactly what datum package Rade needs.|Do not invent coordinates or transforms.|
-|Seat hardpoints|OEM_INPUT_REQUIRED / BLOCKED|Vehicle request explicitly lists front/rear and left/right mounting references/coordinates.|No authoritative hardpoints.|Critical|Check dependency of V7-100/110 on vehicle mounting definition.|Do not use concept rail spacing as OEM hardpoints.|
-|Restraint anchors|OEM_INPUT_REQUIRED / BLOCKED|190 is vehicle-dependent; current PMI says vehicle data required.|No vehicle-specific anchor coordinates/load specs.|Critical|Review required restraint interface disclosure.|Do not assume belt anchorage compliance.|
-|Mass / CG / inertia|SOURCE_REQUIRED / TEST_REQUIRED|B-Rep volume exists; mass/CG/inertia remain unresolved in current CAE dependency graph.|No authoritative density/material mapping or accepted measured mass properties.|High|Define required measurement/model evidence.|Do not reuse illustrative human/seat masses as V7 facts.|
-|Materials|SOURCE_REQUIRED|Material status is defined but grades/density/certificates are unresolved.|No direct mapped supplier/OEM controlled allocation evidence.|Critical|Review material-role disclosure and evidence chain.|Do not promote catalog/application guidance to V7 allocation.|
-|PMI / GD&T|SOURCE_REQUIRED / PARTIAL|Critical characteristics are defined; released PMI/GD&T remains 0%.|No authoritative released drawings/PMI/tolerance stacks.|Critical|Review critical-characteristic logic.|Do not infer tolerances from concept CAD.|
-|Tolerances|SOURCE_REQUIRED|V7 PMI register marks tolerance stack/source drawing requirements.|Released dimensional tolerances unavailable.|Critical|Identify tolerances necessary for Stage-0 disclosure vs. later manufacturing release.|Do not invent ± values.|
-|Fasteners / preload|SOURCE_REQUIRED / TEST_REQUIRED|IF-R4-01..09 fastener fields are null and supplier-controlled/test-required.|Exact hardware, installation, torque and preload not assigned.|Critical|Review fastener evidence requirements per interface.|Do not assume 8.8/10.9/12.9 or any torque/preload.|
-|Joint compliance|TEST_REQUIRED|Interfaces are design-intent-defined but physical validation not done.|No measured joint stiffness/compliance.|High|Review which joints need characterization.|Do not treat geometric joint definitions as measured compliance.|
-|Absorber interface / 130|TEST_REQUIRED / SOURCE_REQUIRED|130 is defined as ride-down path; current gap requires selected absorber and F-x/F-v/hysteresis/temp evidence.|No selected/serialized and measured absorber characterization.|Critical|Review cartridge concept and validation requirements.|Do not treat 180 mm or 18–22 kN design values as measured.|
-|Lock 170|TEST_REQUIRED|V7 defines state transitions; gap register requires final physical implementation and fault/unintended-release tests.|No physical lock characterization.|Critical|Review state machine, fault cases and proof plan.|Do not assume safe transition, capture, or reset.|
-|Rebound 180|TEST_REQUIRED|V7 defines reverse-motion control; measured law and secondary-excursion evidence missing.|No physical rebound data.|High|Review rebound-state disclosure and test observables.|Do not assume damping or stability.|
-|Serviceability|PARTIAL / DESIGN_DEFINED|V6 discloses serviceable absorber cartridge and post-event inspection/replacement logic.|No production service procedure or validated cycle/replacement data.|Medium|Review serviceability concept and evidence needs.|Do not infer field-service readiness.|
-|Assembly feasibility|PARTIAL|Architecture is decomposed, but manufacturing drawings/fasteners/joints/clearances are incomplete.|No controlled released assembly work instructions or inspection evidence.|High|Review assembly dependencies and access requirements.|Do not claim assembly release from CAD alone.|
-|Critical load paths|DESIGN_DEFINED / UNPROVEN|V7 maps 100→110→120→130 and seatback/190 paths conceptually; no physical load proof.|Structural capacity, joint/weld/fastener data missing.|Critical|Review topology and evidence chain for each load path.|Do not equate topology with capacity.|
-|Manufacturing evidence|BLOCKED|Readiness and executive reports state production release is not authorized; PPAP/APQP/tooling not evidenced.|No released drawings, control plan, inspection, supplier production evidence.|Critical|Define release evidence checklist only.|Do not call prototype-ready manufacturing release.|
-|CAE input readiness|BLOCKED|CAE graph shows missing material/density/mass/CG/inertia/contact/friction/absorber/load case inputs.|Critical inputs remain unresolved; no authorized CAE execution.|Critical|Review dependency ordering and input closure plan.|Do not run or claim CAE validation.|
-|Physical validation|NOT_ESTABLISHED|Current reports explicitly state no T-OCS physical measurements/test results.|No absorber/lock/rebound/system/ATD results.|Critical|Review experimental plan and acceptance structure.|Do not call design validated.|
-|OEM / regulatory status|NOT_ESTABLISHED|Astra report and readiness snapshot state OEM approval/regulatory compliance not established.|No vehicle-specific compliance evidence.|Critical|Review required compliance evidence domains.|Do not issue compliance claims from research sources.|
+| Stable V7 architecture | KNOWN / DESIGN_DEFINED | V7 disclosure defines stable numerals 100–210 and their functional roles. | Manufacturing-level mapping for every physical detail is not authoritative. | High | Review only as context for the nine approved Stage-0 engineering topics. | Do not treat numerals, concept geometry or reference relationships as production facts. |
+| Dynamic engineering coordination disclosure | KNOWN / DISCLOSURE_DEFINED | Controlled coordination of seat translation, seatback motion, occupant packaging and structural load paths during a dynamic event. | Physical implementation and validation are not established. | High | Review only for consistency with occupant packaging, motion, interfaces and load-path logic. | Do not assume performance, safety effectiveness, or validated behavior. |
+| H-point / R-point | OEM_INPUT_REQUIRED | Vehicle-specific H/R-point dependency is unresolved; disclosure does not prove H/R-point compliance. | No authoritative vehicle-specific H/R-point package. | High | Review the H/R-point dependency and define the evidence needed for the target vehicle. | Do not invent or substitute H/R-point coordinates. |
+| Occupant packaging | OEM_INPUT_REQUIRED / PARTIAL | Packaging is vehicle-dependent and renderings do not establish occupant clearance. | No vehicle-specific envelope/seating proof. | High | Review occupant packaging dependencies and required clearance checks. | Do not assume anthropometric or clearance compliance. |
+| Backrest angle / range / end-stops | MODEL_DERIVABLE / SOURCE_REQUIRED | Current model contains a reference seatback coordinate/range; static geometry does not prove physical stops. | Authoritative stop geometry and physical stop proof are missing. | High | Review backrest motion, dependency on vehicle packaging and verification method. | Do not convert model range into physical capability. |
+| Clearance / interference | PARTIAL | V7-R2 records classified retained interfaces after correction; this does not constitute continuous-motion clearance proof. | Release-level continuous-motion clearance and authoritative geometry are incomplete. | High | Review clearance/interference ownership, motion envelope and verification method. | Do not infer zero interference from static or limited checks. |
+| Rail / hardpoint integration | BLOCKED | 110L/110R are design-defined, while vehicle hardpoints remain external inputs. | No authoritative vehicle hardpoint/fixture mapping. | Critical | Review rail-to-vehicle dependency and the required hardpoint evidence. | Do not invent spacing, coordinates, fixture geometry or loads. |
+| BIW interface logic | OEM_INPUT_REQUIRED / BLOCKED | 100 is the vehicle/base interface; BIW structure is vehicle-specific. | No controlled BIW interface package. | Critical | Review logical BIW load/interface dependencies only. | Do not claim BIW compatibility or capacity. |
+| Kinematic conflicts | PARTIAL / MODEL_ONLY | Current model uses carriage translation and seatback rotation as model coordinates. | Authoritative mechanism semantics, physical joints and end-stops remain incomplete. | High | Review kinematic conflict dependencies within packaging and interface geometry. | Do not claim physical DOF proof or absence of failure modes. |
+| Packaging feasibility | PARTIAL | Vehicle-specific packaging constraints are acknowledged; H/R-point, clearance and manufacturing proof are incomplete. | Vehicle envelope, wiring, service and restraint/airbag integration remain unresolved. | High | Review packaging feasibility dependencies within the approved scope. | Do not treat visual fit as verified packaging. |
+| DFM / manufacturing definition | PARTIAL | DFM/DFA definitions exist; released PMI/GD&T is not established. | No released drawings/tolerances/process/inspection package. | Critical | Review DFM/DFA logic and manufacturing-definition dependencies. | Do not call the system manufacturing-ready. |
+| Vehicle datum | OEM_INPUT_REQUIRED / BLOCKED | Vehicle input definition requires coordinate system, origin/datum and axis conventions. | No authoritative OEM datum. | Critical | Outside primary Rade work scope; record as an upstream dependency for H/R and hardpoint review. | Do not invent coordinates or transforms. |
+| Seat hardpoints | OEM_INPUT_REQUIRED / BLOCKED | Vehicle input definition requires mounting references/coordinates. | No authoritative hardpoints. | Critical | Outside primary Rade work scope; record as an upstream dependency for rail/hardpoint integration. | Do not use concept rail spacing as OEM hardpoints. |
+| Restraint anchors | OEM_INPUT_REQUIRED / BLOCKED | 190 is vehicle-dependent and current PMI identifies vehicle data as required. | No vehicle-specific anchor coordinates/load specifications. | Critical | Outside primary Rade work scope; record as a dependency affecting packaging and interface review. | Do not assume restraint anchorage compliance. |
+| Mass / CG / inertia | SOURCE_REQUIRED / TEST_REQUIRED | Mass properties remain unresolved in the current CAE dependency chain. | No authoritative density/material mapping or accepted measured mass properties. | High | Outside primary Rade work scope; record only as an upstream engineering dependency. | Do not use unresolved values as project facts. |
+| Materials | SOURCE_REQUIRED | Material status exists, but grades/density/certificates are unresolved. | No controlled mapped material evidence. | Critical | Outside primary Rade work scope; record dependency only. | Do not promote catalog guidance or candidate grades to V7 facts. |
+| PMI / GD&T | SOURCE_REQUIRED / PARTIAL | Critical characteristics are defined, but released PMI/GD&T is not established. | No authoritative released drawings/PMI/tolerance stacks. | Critical | Outside primary Rade work scope except where DFM/DFA dependencies must be flagged. | Do not infer tolerances from concept CAD. |
+| Tolerances | SOURCE_REQUIRED | Tolerance-stack/source-drawing requirements are identified. | Released dimensional tolerances are unavailable. | Critical | Outside primary Rade work scope except for DFM/DFA dependency identification. | Do not invent ± values. |
+| Fasteners / preload | SOURCE_REQUIRED / TEST_REQUIRED | Fastener fields remain unresolved across the defined interfaces. | Exact hardware, installation and preload are not assigned. | Critical | Outside primary Rade work scope; record dependency only. | Do not assume fastener grade, torque or preload. |
+| Joint compliance | TEST_REQUIRED | Interfaces are design-intent-defined but not physically validated. | No measured joint stiffness/compliance. | High | Outside primary Rade work scope; record dependency only. | Do not treat joint geometry as measured compliance. |
+| Absorber interface / 130 | TEST_REQUIRED / SOURCE_REQUIRED | 130 is the ride-down path; required physical characterization is not available. | No measured F-x/F-v/hysteresis/temperature data. | Critical | Outside primary Rade work scope; record only where it creates packaging/interface constraints. | Do not treat 180 mm or 18–22 kN concept values as measured. |
+| Lock 170 | TEST_REQUIRED | 170 is disclosed as a multi-state lock; physical validation is not established. | No physical lock characterization or fault testing. | Critical | Outside primary Rade work scope; record dependency only. | Do not assume safe capture/release/reset behavior. |
+| Rebound 180 | TEST_REQUIRED | 180 is disclosed as rebound control; physical reverse-motion behavior is unproven. | No measured force/velocity law or secondary-excursion evidence. | High | Outside primary Rade work scope; record dependency only. | Do not assume damping or stability. |
+| Serviceability | PARTIAL / DESIGN_DEFINED | Service access/replacement concepts are disclosed, but production service evidence is incomplete. | No released service procedure or validated field data. | Medium | Review only where service access affects DFM/DFA or packaging feasibility. | Do not infer field-service readiness. |
+| Assembly feasibility | PARTIAL | Decomposed architecture exists, but assembly hardware/drawings/clearances are incomplete. | No controlled released assembly work instructions or inspection evidence. | High | Review assembly access and sequence only within DFM/DFA. | Do not claim assembly release from CAD alone. |
+| Critical load paths | DESIGN_DEFINED / UNPROVEN | Load-path topology is disclosed, but capacity is unproven. | Structural capacity, joints, welds and fasteners remain unresolved. | Critical | Review load-path logic only where it directly affects rail/BIW/packaging dependencies. | Do not equate topology, touching or model motion with capacity. |
+| Manufacturing evidence | BLOCKED | Production release is not authorized; supplier/inspection evidence is incomplete. | No released production evidence. | Critical | Review only as the DFM/DFA release boundary. | Do not call the project manufacturing-ready. |
+| CAE input readiness | BLOCKED | Critical inputs remain unresolved and CAE validation is not established. | Missing material/density/mass/CG/inertia/contact/friction/absorber/load-case inputs. | Critical | Outside approved Rade Stage-0 work scope; record dependency only. | Do not run or claim CAE validation from this package. |
+| Physical validation | NOT_ESTABLISHED | No T-OCS physical measurement/test evidence is established in the current package. | No system-level physical validation evidence. | Critical | Outside approved Rade Stage-0 work scope; record dependency only. | Do not call the design physically validated. |
+| OEM / regulatory status | NOT_ESTABLISHED | Vehicle-specific approval/compliance is not established. | No vehicle-specific compliance evidence. | Critical | Outside approved Rade Stage-0 work scope; record dependency only. | Do not issue OEM or regulatory compliance claims. |
 
-## 16. Fail-closed recommendation
-**Recommendation:** `RADE_STAGE0_ALLOWED_AS_DISCLOSURE_REVIEW_ONLY; ENGINEERING_PASS_FORBIDDEN_WHERE_CRITICAL_EVIDENCE_IS_MISSING`.
+## 12. Exact Rade Stage-0 input manifest
+The following is the complete Rade-facing input set:
+- **R0-IN-01** — V7 stable reference architecture: 100, 110L/110R, 120, 130, 140, 150L/150R, 160, 170, 180, 190, 200, 210 and J — `KNOWN / DISCLOSURE_DEFINED` — Context for the nine approved Stage-0 engineering topics.
+- **R0-IN-02** — Controlled coordination of seat translation, seatback motion, occupant packaging and structural load paths during a dynamic event. — `KNOWN / DISCLOSURE_DEFINED` — Neutral engineering review of coordination among motion, packaging and structural load paths.
+- **R0-IN-03** — V7 Rade-facing normalized state vocabulary: S0 Normal; S1 Armed/Capture; S2 Pelvis Lock/Capture; S3 Ride-Down; S4 Rotation/Rebound; S5 Secure/Post-event — `KNOWN / DISCLOSURE_DEFINED` — Trace the disclosed dynamic sequence without changing engineering state names.
+- **R0-IN-04** — V7 12-requirement audit P0-001..P0-012 and current statuses — `KNOWN` — Know what is defined versus unproven; do not convert gaps to PASS.
+- **R0-IN-05** — Current model-only result: 2 generalized coordinates, 180 mm model travel, q2 reference range −10..+25 deg — `MODEL_DERIVABLE` — Packaging/kinematic review only as model evidence.
+- **R0-IN-06** — Current interface intent IF-R4-01..09 — `DESIGN_DEFINED` — Trace interfaces relevant to packaging, rails, BIW and motion.
+- **R0-IN-07** — Current readiness/gap/evidence status and source map — `KNOWN` — Bound Stage-0 statements to evidence and known blockers.
+- **R0-IN-09** — Source revisions, repository paths, commit SHA and SHA-256 provenance metadata — `KNOWN` — Traceability control only; no engineering fact is created by provenance metadata.
 
-Rade can review whether the disclosed mechanism, state transitions, reference numerals, evidence boundaries, and proposed validation pathway are coherent. Rade must return an explicit blocker wherever the review would otherwise rely on an unsupported vehicle datum, H-point, hardpoint, material, tolerance, fastener, load, absorber law, lock behavior, rebound law, physical result, CAE result, or production-release artifact.
+## 13. Commercial boundary
+Commercial form: **ONE fixed-price Stage-0 result.** Hours are not the purchased output. There is no open-ended hourly scope. Stage-0 does not promise closure of the broader 181-gap universe or later validation/manufacturing gates.
 
-## 17. Immutable configuration state
-- `V7-R3 = IMMUTABLE`
-- `R4.1 = FROZEN / IMMUTABLE`
-- `R4.2 = NOT AUTHORIZED`
-- `RC-007 = NOT CREATED`
-- `CAD / STEP / GEOMETRY = UNCHANGED BY THIS AUDIT`
-- `DESIGN INTENT = UNCHANGED BY THIS AUDIT`
-- `ENGINEERING VALUES = UNCHANGED BY THIS AUDIT`
-- `CAE = NOT EXECUTED / BLOCKED`
-- `PHYSICAL TEST = NOT EXECUTED`
+## 14. PASS firewall
+1. PASS on H/R-point dependency without authoritative vehicle/package reference and traceable coordinates.
+2. PASS on occupant packaging without vehicle-specific envelope, seating reference and clearance verification.
+3. PASS on backrest angle/motion or end-stops that treats model reference motion as physical capability.
+4. PASS on clearance/interference without adequate intended-contact classification plus authoritative geometry/motion verification.
+5. PASS on rail/hardpoint integration without controlled vehicle mounting geometry and relevant interface evidence.
+6. PASS on BIW interface logic without controlled vehicle structural interface evidence.
+7. PASS on kinematic conflicts without authoritative joint semantics, end-stops and motion verification.
+8. PASS on packaging feasibility from visual fit alone.
+9. PASS on DFM/DFA or manufacturing readiness without released drawings/PMI/GD&T, process and inspection evidence.
+10. PASS on materials, fasteners, tolerances, joint compliance, absorber, lock, rebound or physical behavior where required evidence is missing.
+11. PASS on CAE validation while critical inputs remain unresolved or solver/model execution evidence is absent.
+12. PASS on crash/occupant safety, injury reduction, regulatory compliance, OEM approval or manufacturing readiness without their corresponding evidence gates.
+13. Any overall PASS that suppresses a known blocker or converts an assumption/reference/target into a confirmed fact.
 
-## 18. Source inventory
-- `SRC_V7_PATENT` — T_OCS_V7_Patent_Draft_Invention_Disclosure(2).pdf — V7 stable reference numerals 100-210; V7 claim center; evidence discipline; V7 claim-to-validation gates.
-- `SRC_V6_PATENT` — T_OCS_V6_Patent_Draft_Invention_Disclosure(1).pdf — V6 state machine S0-S5, claim architecture, validation observables, explicit packaging caveats and pre-filing gates.
-- `EVID_GAP_REGISTER` — V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json — 12 requirements; 0 fully closed; all 12 partial; missing evidence and status.
-- `EVID_EXEC_R2` — V7_R2_EXECUTIVE_REPORT.md — Current V7-RC-002 overlap/kinematic/model status and remaining blockers.
-- `EVID_EXEC_CURRENT` — V7_ENGINEERING_EXECUTIVE_REPORT.md — Current reconstruction, material/PMI/CAE/manufacturing status and remaining true engineering gaps.
-- `EVID_CAD` — T_OCS_V0_CAD_VALIDATION_REPORT.pdf — Historical/current CAD validation boundary: hardpoints hold, DOF/stroke caveats, interference classification boundary.
-- `EVID_READINESS` — V7_ENGINEERING_READINESS_SNAPSHOT.md — Readiness summary and critical blockers.
-- `EVID_R4_1_AUDIT` — R4.1_NATIVE_STEP_SOURCE_AUDIT.md — R4.1 frozen/immutable; current runtime cannot deterministically re-extract exact payload; fabrication release blocked.
-- `EVID_MISSING` — V7_MISSING_EVIDENCE_REGISTER.json — Missing evidence list: OEM inputs, materials, absorber, lock, rebound, manufacturing drawings, correlation.
-- `EVID_INTERFACE` — V7_CURRENT_ENGINEERING_INTERFACE_DEFINITION.json — IF-R4-01..09 design-intent definitions; fastening/clearance/source boundaries; physical validation not done.
-- `EVID_FASTENER` — V7_FASTENER_JOINT_DEFINITION_R5.json — IF-R4-01..09 fastener fields remain null / supplier-controlled / test-required.
-- `EVID_PMI` — V7_R2_PMI_GDT.json — Critical PMI/GD&T characteristics defined but unreleased; source drawing/tolerance stack required.
-- `EVID_CAE` — V7_CAE_DEPENDENCY_GRAPH_R5.json — CAE nodes and dependencies; critical inputs remain external/test-required.
-- `EVID_VEHICLE` — VEHICLE_INPUT_REQUEST_R5.json — Vehicle datum, hardpoints, package and load-interface inputs required; current state blocked.
-- `EVID_ASTRA` — V7_ASTRA_TRANSFER_PROGRAM_FINAL_REPORT.md — Controlled evidence-domain split; manufacturing/safety/OEM/physical validation not established.
+## 15. External provenance
+Project commit anchor: `f562a8cfe00835f1919ab3683bf17b3ae407100b`
 
-**Audit boundary:** this document is a read-only synthesis of the cited source set. It does not itself constitute independent Manus verification, OEM evidence, supplier evidence, physical validation, CAE validation, or a production release.
+| SOURCE_ID | REPOSITORY_PATH | COMMIT_SHA | SHA-256 | PURPOSE |
+|---|---|---|---|---|
+| V7_DISCLOSURE | Library:/T_OCS_V7_Patent_Draft_Invention_Disclosure(2).pdf | f562a8cfe00835f1919ab3683bf17b3ae407100b | 9bf1b0fe2b1efef776582910ea82bced511f1b2731d5279182470a3560517921 | Stable V7 reference numerals, architecture relationships, evidence discipline, and explicit concept-vs-evidence boundaries. |
+| V6_DISCLOSURE | Library:/T_OCS_V6_Patent_Draft_Invention_Disclosure(1).pdf | f562a8cfe00835f1919ab3683bf17b3ae407100b | 7051d6cdb78af7ab5b3ca222579063c7d962a227bfd8218a3235cd11e7df3c54 | Packaging caveats, state-transition disclosure, observables, and explicit limits on renderings/CAD. |
+| V7_GAP | V7_ENGINEERING_EVIDENCE_GAP_AUDIT/V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json | f562a8cfe00835f1919ab3683bf17b3ae407100b | 5c8e061ddac87071813906c2100b62c2d89ceb1c9739b05206875e69f807e710 | 12 requirements: 0 closed, 12 partial, and current evidence gaps. |
+| V7_R2_REPORT | V7_R4_INPUT/V7_R2_EXECUTIVE_REPORT.md | f562a8cfe00835f1919ab3683bf17b3ae407100b | bee220665fcd08587bc2f39e1d5d1be7424f1d590746527ff55685c50452db74 | Current model/intersection/kinematic status; model-only result boundary. |
+| V7_EXECUTIVE | V7_ENGINEERING_BASELINE/MANIFESTS/V7_ENGINEERING_EXECUTIVE_REPORT.md | f562a8cfe00835f1919ab3683bf17b3ae407100b | d3d04b4fb0dcc6aca746119e00feb420d8c4852ec7195412e6623cf24eb2ded5 | Current reconstruction, DFM/DFA definition, PMI, materials, CAE and manufacturing-release boundaries. |
+| V7_INTERFACE | V7_CURRENT_ENGINEERING_INTERFACE_DEFINITION_R4/V7_CURRENT_ENGINEERING_INTERFACE_DEFINITION.json | f562a8cfe00835f1919ab3683bf17b3ae407100b | 4b41d70467482a2d7d35d5d33dd393bb346552def3e620e7a65914369a4ff572 | IF-R4-01..09 design-intent interfaces; physical validation not done. |
+| V7_FASTENER | V7_ENGINEERING_R5/V7_FASTENER_JOINT_DEFINITION_R5.json | f562a8cfe00835f1919ab3683bf17b3ae407100b | 04e62cf2baef4fc4a45c9286d69b0731c563fcd55e95b423cae266279ea5c7a8 | Fastener/preload fields remain unresolved and supplier/test controlled. |
+| V7_PMI | V7_ENGINEERING_BASELINE_R2_EXECUTED/PMI_GDT/V7_R2_PMI_GDT.json | f562a8cfe00835f1919ab3683bf17b3ae407100b | b806e81558937160fec748cd011a71fefd635d45272371c7a53ab0144f2f98c0 | Critical characteristics defined; PMI/GD&T not released. |
+| V7_CAE | V7_ENGINEERING_R5/V7_CAE_DEPENDENCY_GRAPH_R5.json | f562a8cfe00835f1919ab3683bf17b3ae407100b | 140cf9ef5728f88b65ea434c204a24d6d3cc5a404f8b79eb0f3a08cd5b3ccc86 | Critical CAE input dependencies remain unresolved; no CAE validation. |
+| V7_VEHICLE | V7_ENGINEERING_R5/V7_VEHICLE_INTERFACE_INPUTS.json | f562a8cfe00835f1919ab3683bf17b3ae407100b | 1b3aa02f04d1cd910744a5fe47e6f40dc5c1235f04bfc1ac13bcc13e01e11e0d | Vehicle datum, hardpoints and package/load-interface inputs remain unresolved. |
+| R4_1_AUDIT | R4_1_NATIVE_CAD_FABRICATION_PIPELINE/R4.1_NATIVE_STEP_SOURCE_AUDIT.md | f562a8cfe00835f1919ab3683bf17b3ae407100b | 8de6e49693bbcf21b46077b4d7e2d591747545820a9ae5f40237c422d820fb37 | Controlled R4.1 frozen/immutable reference only; no R4.2 and no geometry change. |
+| R4_1_STEP_HISTORICAL_REFERENCE | R4.1/R4.1.step | f562a8cfe00835f1919ab3683bf17b3ae407100b | fbe6b17cdbf728a2e47963e567e12eeceb1352a36e719e7d1c55cc5f712a0a68 | Historical frozen baseline checksum explicitly preserved as reference; not modified or used to fill missing engineering data. |
+
+External-facing provenance uses stable paths, the project commit SHA, and SHA-256 only.
+
+## 16. Final release gate
+Artifact-release PASS is separate from engineering-release PASS. The corrected Stage-0 artifact set may be released only after all ten correction checks are independently verified. The engineering content remains fail-closed.

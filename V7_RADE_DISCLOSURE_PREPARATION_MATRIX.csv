@@ -1,0 +1,10 @@
+RADE_TOPIC,SCOPE_ALLOWED,DATA_RADE_GENUINELY_NEEDS,DATA_MAY_REVIEW_AS_MODEL_OR_DESIGN,OEM_REQUIRED_DATA,TEST_REQUIRED_DATA
+H/R-point dependency,YES,"R0 placeholder only, clearly marked non-regulatory",H/R point placeholder must remain non-authoritative,OEM H/R-point package required,Do not promote placeholder
+Occupant packaging,YES,Current model guidance/seat geometry,Model geometry and concept envelope with labels,OEM package + occupant definition,No packaging PASS without verification
+Backrest angle/motion,YES,25° concept nominal and q2 model range -10..25° as model-only,Model motion only,Controlled joint/stop definition,No physical capability claim
+Clearance/interference,YES,R4 B-Rep interface evidence and sampled model only,Common-volume evidence/model sweep,Continuous motion + production geometry,No zero-interference claim
+Rail/hardpoint integration,YES,Rail concept dimensions,Current reconstruction geometry,OEM hardpoints + controlled rail drawing,No hardpoint compatibility PASS
+BIW interface logic,YES,100 architectural role only,Logical load/interface relationship,OEM BIW geometry/load requirements,No structural capacity claim
+Kinematic conflicts,YES,Model-defined q1/q2 and interface map,R4 model-only kinematics,Physical joint/stop verification,No physical DOF PASS
+Packaging feasibility,YES,Concept envelope and current model as labeled,Model-derived envelope,OEM package + clearance verification,No visual-fit PASS
+DFM/DFA,YES,Current DFM/DFA definitions,Concept manufacturing process notes,"Released drawings, process and inspection evidence",No manufacturing-ready claim

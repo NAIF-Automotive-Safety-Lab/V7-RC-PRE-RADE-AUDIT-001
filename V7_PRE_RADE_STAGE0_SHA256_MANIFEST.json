@@ -1,0 +1,38 @@
+{
+  "release_state": "FINAL_VERIFIED",
+  "manifest_identity": "V7_PRE_RADE_STAGE0_SHA256_MANIFEST",
+  "commit_sha": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+  "hash_scope": "All Stage-0 payload artifacts and the final release gate. The checksum manifest does not self-hash; its checksum is recorded in the final inventory/control record.",
+  "artifacts": [
+    {
+      "path": "V7_FINAL_PRE_RADE_ENGINEERING_AUDIT.json",
+      "size_bytes": 33551,
+      "sha256": "e0d575a8597e2b2a1493e53020c94cc8c55ec7b615bdbb3d43ec2b8958c9c7b7"
+    },
+    {
+      "path": "V7_FINAL_PRE_RADE_ENGINEERING_AUDIT.md",
+      "size_bytes": 21948,
+      "sha256": "e9ed268f56e149f6a7f87c26f99ab5accff8fee8b2f585a701623dc49229217d"
+    },
+    {
+      "path": "V7_RADE_STAGE0_INPUT_MANIFEST.md",
+      "size_bytes": 2287,
+      "sha256": "c653b3cd67a5a401a49131d8755ead3e9aad7b5b689a7f7d7ce5ab6e2216beae"
+    },
+    {
+      "path": "V7_RADE_STAGE0_DISCLOSURE_BOUNDARY.md",
+      "size_bytes": 3861,
+      "sha256": "cdea59a21bbc085d972acdc9f54e5b1cd64b7c226176f53b596f102a5064351b"
+    },
+    {
+      "path": "V7_RADE_STAGE0_GAP_MATRIX.csv",
+      "size_bytes": 11345,
+      "sha256": "95e5e1e6907160b9c136619bedfb7fe34d3dce7a7805a5f1660bd93e26bd95d8"
+    },
+    {
+      "path": "V7_PRE_RADE_STAGE0_FINAL_RELEASE_GATE.json",
+      "size_bytes": 1399,
+      "sha256": "808f6f823e9958d46a523e18aaacab53689af7de29eccca9940cfb88f7a8a979"
+    }
+  ]
+}

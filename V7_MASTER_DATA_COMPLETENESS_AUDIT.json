@@ -1,0 +1,684 @@
+{
+  "TASK_ID": "V7-MASTER-DATA-COMPLETENESS-AUDIT-002",
+  "DECISION": "FAIL-CLOSED MASTER DATA COMPLETENESS AUDIT",
+  "AUDIT_TYPE": "ORIGINAL V7 MASTER DATA COMPLETENESS FORENSIC AUDIT",
+  "READ_ONLY": true,
+  "V7_GEOMETRY_MODIFIED": false,
+  "V7_DESIGN_INTENT_MODIFIED": false,
+  "R4_1_MODIFIED": false,
+  "R4_2_CREATED": false,
+  "RC_007_CREATED": false,
+  "CONTROLLED_STATUS_VOCABULARY": [
+    "CAE_REQUIRED",
+    "CONFLICTING",
+    "DESIGN_ASSUMPTION",
+    "KNOWN",
+    "MISSING",
+    "MODEL_DERIVED",
+    "NOT_APPLICABLE",
+    "OEM_INPUT_REQUIRED",
+    "PARTIAL",
+    "SOURCE_SUPPORTED",
+    "SUPPLIER_INPUT_REQUIRED",
+    "TEST_REQUIRED"
+  ],
+  "CURRENT_STATE_VOCABULARY": [
+    "S0 Normal",
+    "S1 Armed/Capture",
+    "S2 Pelvis Lock/Capture",
+    "S3 Ride-Down",
+    "S4 Rotation/Rebound",
+    "S5 Secure/Post-event"
+  ],
+  "SOURCE_PROVENANCE": [
+    {
+      "SOURCE_ID": "V7_DISCLOSURE",
+      "REPOSITORY_PATH": "V7_MASTER_SOURCE/T_OCS_V7_Patent_Draft_Invention_Disclosure(2).pdf",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7.0",
+      "PURPOSE": "Primary V7 patent/invention disclosure",
+      "SHA256": "9bf1b0fe2b1efef776582910ea82bced511f1b2731d5279182470a3560517921",
+      "SIZE_BYTES": 5173605,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V6_DISCLOSURE",
+      "REPOSITORY_PATH": "V7_MASTER_SOURCE/T_OCS_V6_Patent_Draft_Invention_Disclosure.pdf",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V6.0",
+      "PURPOSE": "Primary V6 patent/invention disclosure",
+      "SHA256": "7051d6cdb78af7ab5b3ca222579063c7d962a227bfd8218a3235cd11e7df3c54",
+      "SIZE_BYTES": 5132925,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R0_PACKAGE",
+      "REPOSITORY_PATH": "T_OCS_V7_R0_Engineering_Design_Package.pdf",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-R0",
+      "PURPOSE": "Original V7 R0 engineering research package",
+      "SHA256": "0c8a384202b9ba36e769baaeced3c1a69cad0818476322fc799148fbd7db4737",
+      "SIZE_BYTES": 43426,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R1_PACKAGE",
+      "REPOSITORY_PATH": "T_OCS_V7_R1_Engineering_Design_Package.pdf",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-R1",
+      "PURPOSE": "V7 R1 engineering research package",
+      "SHA256": "81dd2d3765887d14b132b21fa807550688d6775800c88956e407db3e30ed4de7",
+      "SIZE_BYTES": 32462,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R1_PARAM_MANIFEST",
+      "REPOSITORY_PATH": "T_OCS_V7_R1_Parametric_Manifest.csv",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-R1",
+      "PURPOSE": "V7 parameter manifest",
+      "SHA256": "a47e6df85d5f60d275c0806dcdde3e5264b93642360b6e4b230221c8d0b82160",
+      "SIZE_BYTES": 1237,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_RECON_SCRIPT",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/CAD_NATIVE/v7_engineering_reconstruction.py",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "Current V7 engineering reconstruction source",
+      "SHA256": "1c53712b102dcbc5cfaa03807894cc0758031ea6ee1f2408d2aa6bb00561abac",
+      "SIZE_BYTES": 6329,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_BASE_MANIFEST",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/MANIFESTS/V7_ENGINEERING_BASELINE_MANIFEST.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "Current baseline manifest",
+      "SHA256": "1076646e4493cad0bd170b4c7ad63ac0e587cac048cdcafa4342020c0d5a6d41",
+      "SIZE_BYTES": 6566,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_EXEC_REPORT",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/MANIFESTS/V7_ENGINEERING_EXECUTIVE_REPORT.md",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "Current engineering executive report",
+      "SHA256": "d3d04b4fb0dcc6aca746119e00feb420d8c4852ec7195412e6623cf24eb2ded5",
+      "SIZE_BYTES": 6066,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_PMI_GDT",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/PMI_GDT/V7_PMI_GDT.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "PMI/GD&T engineering definition register",
+      "SHA256": "e617f727c51197f93a865c2982776c2aee7b5ca37f8ceeea320664f3f35d23ce",
+      "SIZE_BYTES": 1905,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_VALIDATION_MATRIX",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/VALIDATION/V7_V0_V8_VERIFICATION_MATRIX.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "V0-V8 verification matrix",
+      "SHA256": "e1389d936eb3832ff6c460d045cf4d46cefe4ecd42ed71c678894c4a62db36e2",
+      "SIZE_BYTES": 3089,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_BOM",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/BOM/V7_BOM.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "Current BOM",
+      "SHA256": "3554c3aa48444a24c330bee96ea400faf3d869b05667386056641872992dd011",
+      "SIZE_BYTES": 7096,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_CAE_MANIFEST",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/CAE/V7_CAE_INPUT_MANIFEST.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "CAE input manifest",
+      "SHA256": "91fdff841ada2c6117427f0a2fc4d0251471dd5b6881e167f863e7256dd31953",
+      "SIZE_BYTES": 1520,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R2_KIN_MODEL",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R2_EXECUTED/KINEMATICS/V7_KINEMATIC_MODEL.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-002",
+      "PURPOSE": "R2 model kinematics",
+      "SHA256": "e8f97e88d7eba334a218be3e7a460f69e3b51a7153410007cbef56fc9025827a",
+      "SIZE_BYTES": 3264,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R2_DOF_PROOF",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R2_EXECUTED/KINEMATICS/V7_R2_DOF_EXECUTION_PROOF.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-002",
+      "PURPOSE": "R2 kinematic proof",
+      "SHA256": "78b299d340e8e01fd1680ece86c9fa447a122d08904f0187e6642e34744d92ca",
+      "SIZE_BYTES": 1066,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R2_EXECUTION",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R2_EXECUTED/KINEMATICS/V7_R2_KINEMATIC_EXECUTION.csv",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-002",
+      "PURPOSE": "R2 executed trajectory",
+      "SHA256": "49ba8a88b17f63abcd457e7523fe964d1abca034bee942dd240f5e45c4232042",
+      "SIZE_BYTES": 26271,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R2_MASS",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R2_EXECUTED/MATERIALS/V7_R2_MASS_PROPERTIES.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-002",
+      "PURPOSE": "R2 mass-properties register",
+      "SHA256": "e74ad17eaff5532a9b9371ebc4254d69eac24cb66f8069dcd649935d8e34ca93",
+      "SIZE_BYTES": 3316,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_INTERFACE_FORENSICS",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R4_FINAL/INTERFACES/V7_R4_INTERFACE_FORENSICS.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "Interface forensic register",
+      "SHA256": "089e5b2533cd48528e45bd02fb5e84769e625b28687865881b6f6196ad823492",
+      "SIZE_BYTES": 11678,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_INTERFACE_GEOM",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R4_FINAL/INTERFACES/V7_R4_INTERFACE_GEOMETRY_EVIDENCE.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "B-Rep interface geometry evidence",
+      "SHA256": "ad47a76f28c1c6fcb1b61b3fd100c993bae368ac5a30312bec80c966c9a372c2",
+      "SIZE_BYTES": 11454,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_EXEC_PROOF",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R4_FINAL/KINEMATICS/V7_R4_KINEMATIC_EXECUTION_PROOF.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "R4 executable kinematic proof",
+      "SHA256": "7da42ca15b2e87cf530fd04cf15b7edfdfef675f828b5f9a3825677484aa118f",
+      "SIZE_BYTES": 385,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_MODEL",
+      "REPOSITORY_PATH": "V7_R4_KINEMATIC_CLOSURE/V7_R4_KINEMATIC_MODEL.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "R4 model definition",
+      "SHA256": "a02cc7a48eabb9e61fa71b697098bd977362758163389f6f4e986ead43441b73",
+      "SIZE_BYTES": 7116,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_STATE",
+      "REPOSITORY_PATH": "V7_R4_KINEMATIC_CLOSURE/V7_R4_STATE_MACHINE.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "R4 state machine model",
+      "SHA256": "8d1867810c897404e77fb088d7410030987bfd935efbba5e1f4a53a3e37f0ccc",
+      "SIZE_BYTES": 1536,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_EXECUTION",
+      "REPOSITORY_PATH": "V7_R4_KINEMATIC_CLOSURE/V7_R4_KINEMATIC_EXECUTION.csv",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "R4 executed trajectory",
+      "SHA256": "e2b7dd91353a1f254216318a6aa59f95f301a168e5d985143a303801fa4057a9",
+      "SIZE_BYTES": 58304,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_COLLISION",
+      "REPOSITORY_PATH": "V7_R4_KINEMATIC_CLOSURE/V7_R4_TRAVEL_COLLISION_AUDIT.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "Sampled travel/collision model audit",
+      "SHA256": "99db2b405b3ccbefe5276bf0d2d45887b91a634dbdcbd3089c0747d9dd5b90a2",
+      "SIZE_BYTES": 902,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_CURRENT_INTERFACES",
+      "REPOSITORY_PATH": "V7_CURRENT_ENGINEERING_INTERFACE_DEFINITION_R4/V7_CURRENT_ENGINEERING_INTERFACE_DEFINITION.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "Current interface definition",
+      "SHA256": "4b41d70467482a2d7d35d5d33dd393bb346552def3e620e7a65914369a4ff572",
+      "SIZE_BYTES": 15477,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_REVISION_CHANGE",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R4_FINAL/MANIFESTS/V7_R4_REVISION_CHANGE_MANIFEST.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "Revision integrity/change record",
+      "SHA256": "45322ff5949b7be04d20e3827a7b27e157f9d6f3e2bc08354e143d6c99fbbb3b",
+      "SIZE_BYTES": 4919,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R4_SUMMARY",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE_R4_FINAL/MANIFESTS/V7_R4_FINAL_SUMMARY.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-004",
+      "PURPOSE": "R4 final summary",
+      "SHA256": "1feff09bc0ce38afaca421c7878bf730f3351e628b2d342780e107fb82d9dd3e",
+      "SIZE_BYTES": 337,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_MASS",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_MASS_CG_INERTIA_R5.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Mass/CG/inertia closure register",
+      "SHA256": "7a7247d25c7c48743bf962f83a8a754f05a0b1f8b993e487433451657bd90228",
+      "SIZE_BYTES": 8734,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_MATERIAL",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_MATERIAL_DEFINITION_R5.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Material definition register",
+      "SHA256": "d07b282a7bcb2967ef73c675e0789486cdf181c98e18ba6c1b013884873c0280",
+      "SIZE_BYTES": 7302,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_FASTENER",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_FASTENER_JOINT_DEFINITION_R5.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Fastener/joint definition register",
+      "SHA256": "04e62cf2baef4fc4a45c9286d69b0731c563fcd55e95b423cae266279ea5c7a8",
+      "SIZE_BYTES": 4958,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_ABSORBER",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_ABSORBER_TEST_SPECIFICATION.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Absorber test specification",
+      "SHA256": "4c64a7aa1d1e9847ad283dbdd6e53881c553d48ae0245b627e1bfda36e0f9610",
+      "SIZE_BYTES": 2579,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_LOCK",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_LOCK_TEST_SPECIFICATION.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Lock test specification",
+      "SHA256": "ca3570ee1f2d73cb5aef7984ba7ce33db7e0ded8ba6550cde8686a537e7f9ea5",
+      "SIZE_BYTES": 2122,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_REBOUND",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_REBOUND_TEST_SPECIFICATION.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Rebound test specification",
+      "SHA256": "f33dadef734bc2eda3008787b650512b87051e2c6cd36fdc413780c8439a7910",
+      "SIZE_BYTES": 1349,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_VEHICLE",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_VEHICLE_INTERFACE_INPUTS.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Vehicle interface input request",
+      "SHA256": "1b3aa02f04d1cd910744a5fe47e6f40dc5c1235f04bfc1ac13bcc13e01e11e0d",
+      "SIZE_BYTES": 1892,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_CAE",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_CAE_DEPENDENCY_GRAPH_R5.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "CAE dependency graph",
+      "SHA256": "140cf9ef5728f88b65ea434c204a24d6d3cc5a404f8b79eb0f3a08cd5b3ccc86",
+      "SIZE_BYTES": 3314,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R5_DFM",
+      "REPOSITORY_PATH": "V7_ENGINEERING_R5/V7_MANUFACTURABILITY_MATRIX_R5.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-005",
+      "PURPOSE": "Manufacturability matrix",
+      "SHA256": "64443a5b437621a9a5902a0cc7f681f6f8b72b1f392982245978eb653a4694c7",
+      "SIZE_BYTES": 8514,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_GAP_REGISTER",
+      "REPOSITORY_PATH": "V7_ENGINEERING_EVIDENCE_GAP_AUDIT/V7_ENGINEERING_EVIDENCE_GAP_REGISTER.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-GAP",
+      "PURPOSE": "12-requirement evidence gap register",
+      "SHA256": "5c8e061ddac87071813906c2100b62c2d89ceb1c9739b05206875e69f807e710",
+      "SIZE_BYTES": 8921,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_REQUIRED_EVIDENCE",
+      "REPOSITORY_PATH": "V7_ENGINEERING_EVIDENCE_GAP_AUDIT/V7_REQUIRED_EVIDENCE_BY_GATE.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-GAP",
+      "PURPOSE": "Required evidence by gate",
+      "SHA256": "cb401affa555f527a0ad56497f515cc2216686e446374f4991d03bf420461c8c",
+      "SIZE_BYTES": 919,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_REQ_TRACE",
+      "REPOSITORY_PATH": "V7_ENGINEERING_EVIDENCE_GAP_AUDIT/V7_REQUIREMENT_TRACEABILITY.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-GAP",
+      "PURPOSE": "Requirement traceability",
+      "SHA256": "6ccc4f640f9543752441a75c1984567cb5041a73c5f9d6831d9cdfaa03428213",
+      "SIZE_BYTES": 4521,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "P0_BOM",
+      "REPOSITORY_PATH": "P0_MINIMUM_BUILD_DEFINITION/P0_MINIMUM_BUILD_BOM.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "P0",
+      "PURPOSE": "P0 minimum build BOM",
+      "SHA256": "7322319e3eac249db701ec1bc5718ea34a15cbdfdcc1b31b6f9a7f003dffebdf",
+      "SIZE_BYTES": 5085,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "P0_STATE_PHYSICAL",
+      "REPOSITORY_PATH": "P0_MINIMUM_BUILD_DEFINITION/P0_STATE_MACHINE_PHYSICAL_IMPLEMENTATION.md",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "P0",
+      "PURPOSE": "P0 physical state implementation",
+      "SHA256": "4206d7a73db37ee56edb0306cf13d96c5aacffb3b1e47ec4b0161037ec26fe48",
+      "SIZE_BYTES": 1560,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "P0_STATE_CONFIG",
+      "REPOSITORY_PATH": "P0_PRE_FABRICATION_CONTROL/P0_STATE_MACHINE_CONFIGURATION.md",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "P0",
+      "PURPOSE": "P0 state configuration",
+      "SHA256": "ab4a866b6d0a6e69f3fd25185f9af58ae54f2d5d3d1f87a55610c4212e736122",
+      "SIZE_BYTES": 944,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "P0_FIREWALL",
+      "REPOSITORY_PATH": "P0_PRE_FABRICATION_CONTROL/P0_PARAMETER_FIREWALL.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "P0",
+      "PURPOSE": "P0 parameter firewall",
+      "SHA256": "19fc194eef96853783b1d724ebc699be06d28c3444c9ad89e973b73b06721e80",
+      "SIZE_BYTES": 1237,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "P0_GAP_REG",
+      "REPOSITORY_PATH": "P0_PRE_FABRICATION_CONTROL/P0_CRITICAL_FABRICATION_GAP_REGISTER.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "P0",
+      "PURPOSE": "P0 fabrication gap register",
+      "SHA256": "f39342dc941737c4680c1b37d6a51642dce8d1d204666ff674c0ad60b8f969cb",
+      "SIZE_BYTES": 2639,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "P0_COUNT_RECON",
+      "REPOSITORY_PATH": "P0_MINIMUM_BUILD_DEFINITION/P0_PARAMETER_COUNT_RECONCILIATION.json",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "P0",
+      "PURPOSE": "P0 parameter-count integrity",
+      "SHA256": "f9ee39c00280318bf2c02fa1561e3a9030ac4f980560cd2d7fbb4835ade84a1a",
+      "SIZE_BYTES": 1167,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V5_REPORT",
+      "REPOSITORY_PATH": "N_IOCARS_V5_Engineering_Report.pdf",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V5",
+      "PURPOSE": "Legacy engineering basis used for conflict detection",
+      "SHA256": "857fba7ada595c29285406db282da463b5c9d68c1b768270007f71ba294a6d69",
+      "SIZE_BYTES": 1351333,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V5_PARAMS",
+      "REPOSITORY_PATH": "N_IOCARS_V5_Design_Parameters.txt",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V5",
+      "PURPOSE": "Legacy coordinate and design parameters",
+      "SHA256": "e37682dd54bae5968df25233a08f067363f3f2005a475d2c7895ef8b5f39fc3c",
+      "SIZE_BYTES": 833,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R0_STEP",
+      "REPOSITORY_PATH": "T_OCS_V7_R0.step",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-R0",
+      "PURPOSE": "Original R0 STEP research model",
+      "SHA256": "995a0a298735c9317a0bd4aabd19d56d7f15433f396a93b24eadb723f6c1f039",
+      "SIZE_BYTES": 524034,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_R1_STEP",
+      "REPOSITORY_PATH": "T_OCS_V7_R1_Parametric_Research_Model.step",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-R1",
+      "PURPOSE": "R1 STEP research model",
+      "SHA256": "448f5f6bab526c1a4aad8981e151037d2323d8c29f41f3f95cf43879bc24fa3a",
+      "SIZE_BYTES": 791857,
+      "AVAILABILITY": "LOCAL"
+    },
+    {
+      "SOURCE_ID": "V7_CURRENT_HIER_STEP",
+      "REPOSITORY_PATH": "V7_ENGINEERING_BASELINE/CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY_HIERARCHICAL.step",
+      "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+      "SOURCE_REVISION": "V7-RC-001",
+      "PURPOSE": "Current reconstructed hierarchical STEP",
+      "SHA256": "c6dea11388c4bd229f71c9b6a8814f83312a2d1976810c7512e38d6be107043d",
+      "SIZE_BYTES": 551219,
+      "AVAILABILITY": "LOCAL"
+    }
+  ],
+  "parameter_register_count": 2200,
+  "numerical_ledger_count": 147,
+  "conflict_count": 19,
+  "critical_gap_count": 30,
+  "scorecard": [
+    {
+      "DOMAIN": "Geometry",
+      "STATUS": "PARTIAL",
+      "BASIS": "Real reconstruction geometry exists; historical authoritative binary master not established."
+    },
+    {
+      "DOMAIN": "Dimensions",
+      "STATUS": "PARTIAL",
+      "BASIS": "Nominal source dimensions exist but conflict with reconstruction/model dimensions."
+    },
+    {
+      "DOMAIN": "Datums",
+      "STATUS": "BLOCKED",
+      "BASIS": "Coordinate conventions conflict; vehicle datum absent."
+    },
+    {
+      "DOMAIN": "H/R-point",
+      "STATUS": "MISSING",
+      "BASIS": "Only a non-regulatory placeholder exists; OEM input required."
+    },
+    {
+      "DOMAIN": "Packaging",
+      "STATUS": "BLOCKED",
+      "BASIS": "Vehicle envelope, H/R point and clearance definition absent."
+    },
+    {
+      "DOMAIN": "Vehicle interfaces",
+      "STATUS": "BLOCKED",
+      "BASIS": "Hardpoints, BIW and restraint anchors absent."
+    },
+    {
+      "DOMAIN": "Kinematics",
+      "STATUS": "PARTIAL",
+      "BASIS": "Model DOF and limits executed, physical semantics unproven."
+    },
+    {
+      "DOMAIN": "Mass",
+      "STATUS": "MISSING",
+      "BASIS": "No controlled mass."
+    },
+    {
+      "DOMAIN": "CG",
+      "STATUS": "MISSING",
+      "BASIS": "No controlled CG."
+    },
+    {
+      "DOMAIN": "Inertia",
+      "STATUS": "MISSING",
+      "BASIS": "No controlled inertia tensor."
+    },
+    {
+      "DOMAIN": "Materials",
+      "STATUS": "MISSING",
+      "BASIS": "No controlled grade/density/certificates."
+    },
+    {
+      "DOMAIN": "Fasteners",
+      "STATUS": "MISSING",
+      "BASIS": "No released fastener/preload data."
+    },
+    {
+      "DOMAIN": "Joints",
+      "STATUS": "PARTIAL",
+      "BASIS": "Model-defined joints exist; physical compliance/clearance absent."
+    },
+    {
+      "DOMAIN": "Loads",
+      "STATUS": "MISSING",
+      "BASIS": "No controlled project load magnitudes/allowables."
+    },
+    {
+      "DOMAIN": "Absorber",
+      "STATUS": "BLOCKED",
+      "BASIS": "Physical characterization absent."
+    },
+    {
+      "DOMAIN": "Lock",
+      "STATUS": "BLOCKED",
+      "BASIS": "Physical implementation/fault testing absent."
+    },
+    {
+      "DOMAIN": "Rebound",
+      "STATUS": "BLOCKED",
+      "BASIS": "Physical characterization absent."
+    },
+    {
+      "DOMAIN": "Restraint",
+      "STATUS": "BLOCKED",
+      "BASIS": "Vehicle-specific anchor/package and dynamic evidence absent."
+    },
+    {
+      "DOMAIN": "PMI/GD&T",
+      "STATUS": "PARTIAL",
+      "BASIS": "Engineering feature register exists; released PMI/GD&T 0%."
+    },
+    {
+      "DOMAIN": "Tolerances",
+      "STATUS": "MISSING",
+      "BASIS": "No released functional/production tolerances."
+    },
+    {
+      "DOMAIN": "DFM",
+      "STATUS": "PARTIAL",
+      "BASIS": "Definition exists; process capability/release absent."
+    },
+    {
+      "DOMAIN": "CAE",
+      "STATUS": "BLOCKED",
+      "BASIS": "Critical inputs and execution evidence absent."
+    },
+    {
+      "DOMAIN": "Testing",
+      "STATUS": "BLOCKED",
+      "BASIS": "No T-OCS physical validation evidence."
+    },
+    {
+      "DOMAIN": "Regulatory",
+      "STATUS": "MISSING",
+      "BASIS": "No vehicle-specific compliance evidence."
+    }
+  ],
+  "key_findings": [
+    "The current V7 is not a coherent buildable engineering definition.",
+    "The coordinate frame is contradictory between V5/R0 and the current reconstruction/R4 model.",
+    "The original V7 R0/R1 dimensions are concept assumptions and conflict with multiple current reconstruction dimensions.",
+    "Mass, CG and inertia remain unresolved because material identity/density are not controlled.",
+    "Vehicle datum, H/R point, hardpoints, BIW and restraint anchors remain OEM-controlled dependencies.",
+    "Absorber 130, lock 170, rebound 180 and joint compliance remain uncharacterized physical behaviors.",
+    "Current kinematic results are model-derived only and differ across model revisions.",
+    "Released PMI/GD&T, production tolerances, fasteners/preload and manufacturing process evidence are incomplete.",
+    "Rade disclosure preparation is not the final Rade package; it is a boundary/preparation matrix only."
+  ],
+  "gate_status": {
+    "coherent_engineering_definition": "BLOCKED",
+    "manufacturable_prototype": "BLOCKED",
+    "CAE_execution": "BLOCKED",
+    "dynamic_bench_testing": "BLOCKED",
+    "sled_testing": "BLOCKED",
+    "manufacturing_release": "BLOCKED"
+  },
+  "rade_scope": [
+    "H/R-point dependency",
+    "occupant packaging",
+    "backrest angle/motion",
+    "clearance/interference",
+    "rail/hardpoint integration",
+    "BIW interface logic",
+    "kinematic conflicts",
+    "packaging feasibility",
+    "DFM/DFA"
+  ],
+  "rade_commercial_boundary": "Not included in this task; any future Stage-0 commercial form must be one fixed-price result, not hours/open-ended hourly scope, and must not promise closure of the broader gap universe.",
+  "source_number_boundary": "Engineering numerical quantities were inventoried. Document/page/claim/patent/hash identifiers are provenance metadata and are not treated as engineering values.",
+  "final_handoff": "Peter_ChatGPT for independent verification and Stage-0 reconstruction."
+}

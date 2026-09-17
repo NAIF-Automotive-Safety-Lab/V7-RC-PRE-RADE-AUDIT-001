@@ -1,0 +1,55 @@
+{
+  "release_state": "FINAL_VERIFIED",
+  "gate_identity": "V7_PRE_RADE_STAGE0_RELEASE_GATE",
+  "artifact_correction_gate": "PASS",
+  "engineering_release_gate": "FAIL_CLOSED",
+  "checks_required": 10,
+  "checks_passed": 10,
+  "engineering_boundary": "Rade Stage-0 disclosure review only within the nine approved topics.",
+  "no_geometry_change": true,
+  "no_design_intent_change": true,
+  "r4_1_immutable": true,
+  "r4_2_created": false,
+  "verification_results": [
+    {
+      "check": "CSV serialization + round-trip parse",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON structural integrity",
+      "status": "PASS"
+    },
+    {
+      "check": "No ephemeral file identifiers in external-facing files",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact Rade-facing S0-S5 vocabulary only",
+      "status": "PASS"
+    },
+    {
+      "check": "Non-engineering strategy material excluded",
+      "status": "PASS"
+    },
+    {
+      "check": "R0-IN-02 exact neutral wording",
+      "status": "PASS"
+    },
+    {
+      "check": "Rade scope limited to nine topics",
+      "status": "PASS"
+    },
+    {
+      "check": "Commercial boundary is one fixed-price result",
+      "status": "PASS"
+    },
+    {
+      "check": "Fail-closed boundaries preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "Final table schema and disclosure boundary",
+      "status": "PASS"
+    }
+  ]
+}
