@@ -1,0 +1,43 @@
+{
+  "manifest_identity": "V7_PRE_RADE_STAGE0_AUDIT_SHA256_MANIFEST",
+  "generated_utc": "2026-09-17T22:59:14.028305+00:00",
+  "artifacts": [
+    {
+      "path": "V7_FINAL_PRE_RADE_ENGINEERING_AUDIT.json",
+      "size_bytes": 31869,
+      "sha256": "4ab15658a385f672d14c6bb2e9bc523a29509b6028f6b04e873d213388980dd8"
+    },
+    {
+      "path": "V7_FINAL_PRE_RADE_ENGINEERING_AUDIT.md",
+      "size_bytes": 27452,
+      "sha256": "4b92ce966cd05ea16df2b1d297f5cbdccb9a24a7ad1c78e3df8a78b9a6db172f"
+    },
+    {
+      "path": "V7_RADE_STAGE0_DISCLOSURE_BOUNDARY.md",
+      "size_bytes": 3709,
+      "sha256": "6e0800ee0906fe4abd38e6a382d73f65f566be86cb7cfc83652721bb71f4f983"
+    },
+    {
+      "path": "V7_RADE_STAGE0_GAP_MATRIX.csv",
+      "size_bytes": 9090,
+      "sha256": "71df6897d16061102ba21371fd5e3cd78e2e71501e6aec703154b7f6b435e4d0"
+    },
+    {
+      "path": "V7_RADE_STAGE0_INPUT_MANIFEST.md",
+      "size_bytes": 2380,
+      "sha256": "3c6ca8edff36989d336e90d9764b10bf1af578ed3d0cfa0b7dd251856a04c1a9"
+    }
+  ],
+  "configuration_state": {
+    "v7_r3": "IMMUTABLE",
+    "r4_1": "FROZEN / IMMUTABLE",
+    "r4_2": "NOT_AUTHORIZED",
+    "rc_007": "NOT_CREATED",
+    "cad_step_geometry_changed": false,
+    "design_intent_changed": false,
+    "engineering_values_changed": false,
+    "cae_executed": false,
+    "physical_test_executed": false,
+    "manus_verification": "NOT_CLAIMED"
+  }
+}
