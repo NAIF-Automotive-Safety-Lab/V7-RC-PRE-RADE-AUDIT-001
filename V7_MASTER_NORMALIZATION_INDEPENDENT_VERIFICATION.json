@@ -1,0 +1,71 @@
+{
+  "TASK_ID": "V7-MASTER-NORMALIZATION-GATE-003",
+  "FINAL_GATE": "FAIL-CLOSED",
+  "MANIFEST_SELF_SHA256": "424f96878261309efdfd1e67990c176c38bae5fef11307cfc3757296cc127c7a",
+  "source_audit_2200_parameter_rows_seen": 2200,
+  "source_audit_not_repeated": true,
+  "canonical_parameter_rows": 1927,
+  "conflict_control_rows": 19,
+  "dimension_record_count": 265,
+  "mass_record_count": 218,
+  "interface_joint_record_count": 16,
+  "numerical_ledger_source_rows": 147,
+  "csv_checks": [
+    {
+      "file": "V7_CANONICAL_ENGINEERING_PARAMETER_REGISTER.csv",
+      "rows": 1946,
+      "columns": 25,
+      "csv_roundtrip_ok": true
+    },
+    {
+      "file": "V7_CANONICAL_DIMENSION_BASELINE.csv",
+      "rows": 265,
+      "columns": 15,
+      "csv_roundtrip_ok": true
+    },
+    {
+      "file": "V7_CANONICAL_MASS_PROPERTY_BASELINE.csv",
+      "rows": 218,
+      "columns": 13,
+      "csv_roundtrip_ok": true
+    },
+    {
+      "file": "V7_CANONICAL_INTERFACES_AND_JOINT_BASELINE.csv",
+      "rows": 16,
+      "columns": 13,
+      "csv_roundtrip_ok": true
+    },
+    {
+      "file": "V7_NUMERICAL_CONFLICT_RESOLUTION_REGISTER.csv",
+      "rows": 19,
+      "columns": 17,
+      "csv_roundtrip_ok": true
+    },
+    {
+      "file": "V7_CANONICAL_DATA_READINESS_MATRIX.csv",
+      "rows": 24,
+      "columns": 11,
+      "csv_roundtrip_ok": true
+    }
+  ],
+  "requested_dimension_class_gaps": [],
+  "conflict_id_gaps": [],
+  "numeric_source_gaps": [],
+  "ephemeral_identifiers_found": [],
+  "coordinate_frame_status": "CONFLICTED",
+  "no_transform_declared": true,
+  "no_geometry_modified": true,
+  "no_design_intent_modified": true,
+  "r4_1_modified": false,
+  "r4_2_created": false,
+  "rc_007_created": false,
+  "state_vocabulary": [
+    "S0 Normal",
+    "S1 Armed/Capture",
+    "S2 Pelvis Lock/Capture",
+    "S3 Ride-Down",
+    "S4 Rotation/Rebound",
+    "S5 Secure/Post-event"
+  ],
+  "release_gate_reason": "Canonical baseline cannot PASS while the project coordinate frame is conflicted and build-critical dimensions, mass properties, vehicle interfaces, materials, joints, absorber/lock/rebound, PMI/GD&T, and validation evidence remain unresolved."
+}

@@ -1,0 +1,219 @@
+MASS_ID,GROUP,PARAMETER,V7_REFERENCE,CURRENT_VALUE,UNIT,STATUS,SOURCE_ID,CONFLICT_ID,NOTES,RADE_MAY_USE,RADE_MAY_MODIFY,RADE_MUST_NOT_ASSUME
+M-001,Component mass,component mass,100,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-002,Component CG,component CG X,100,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-003,Component CG,component CG Y,100,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-004,Component CG,component CG Z,100,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-005,Component inertia,Ixx,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-006,Component inertia,Iyy,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-007,Component inertia,Izz,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-008,Component inertia,Ixy,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-009,Component inertia,Ixz,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-010,Component inertia,Iyz,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-011,Principal inertia,principal moments,100,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-012,Principal inertia,principal axes,100,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-013,Component mass,component mass,110L,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-014,Component CG,component CG X,110L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-015,Component CG,component CG Y,110L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-016,Component CG,component CG Z,110L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-017,Component inertia,Ixx,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-018,Component inertia,Iyy,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-019,Component inertia,Izz,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-020,Component inertia,Ixy,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-021,Component inertia,Ixz,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-022,Component inertia,Iyz,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-023,Principal inertia,principal moments,110L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-024,Principal inertia,principal axes,110L,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-025,Component mass,component mass,110R,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-026,Component CG,component CG X,110R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-027,Component CG,component CG Y,110R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-028,Component CG,component CG Z,110R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-029,Component inertia,Ixx,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-030,Component inertia,Iyy,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-031,Component inertia,Izz,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-032,Component inertia,Ixy,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-033,Component inertia,Ixz,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-034,Component inertia,Iyz,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-035,Principal inertia,principal moments,110R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-036,Principal inertia,principal axes,110R,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-037,Component mass,component mass,120,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-038,Component CG,component CG X,120,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-039,Component CG,component CG Y,120,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-040,Component CG,component CG Z,120,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-041,Component inertia,Ixx,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-042,Component inertia,Iyy,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-043,Component inertia,Izz,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-044,Component inertia,Ixy,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-045,Component inertia,Ixz,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-046,Component inertia,Iyz,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-047,Principal inertia,principal moments,120,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-048,Principal inertia,principal axes,120,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-049,Component mass,component mass,130L,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-050,Component CG,component CG X,130L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-051,Component CG,component CG Y,130L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-052,Component CG,component CG Z,130L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-053,Component inertia,Ixx,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-054,Component inertia,Iyy,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-055,Component inertia,Izz,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-056,Component inertia,Ixy,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-057,Component inertia,Ixz,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-058,Component inertia,Iyz,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-059,Principal inertia,principal moments,130L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-060,Principal inertia,principal axes,130L,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-061,Component mass,component mass,130R,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-062,Component CG,component CG X,130R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-063,Component CG,component CG Y,130R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-064,Component CG,component CG Z,130R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-065,Component inertia,Ixx,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-066,Component inertia,Iyy,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-067,Component inertia,Izz,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-068,Component inertia,Ixy,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-069,Component inertia,Ixz,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-070,Component inertia,Iyz,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-071,Principal inertia,principal moments,130R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-072,Principal inertia,principal axes,130R,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-073,Component mass,component mass,140,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-074,Component CG,component CG X,140,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-075,Component CG,component CG Y,140,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-076,Component CG,component CG Z,140,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-077,Component inertia,Ixx,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-078,Component inertia,Iyy,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-079,Component inertia,Izz,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-080,Component inertia,Ixy,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-081,Component inertia,Ixz,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-082,Component inertia,Iyz,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-083,Principal inertia,principal moments,140,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-084,Principal inertia,principal axes,140,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-085,Component mass,component mass,150L,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-086,Component CG,component CG X,150L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-087,Component CG,component CG Y,150L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-088,Component CG,component CG Z,150L,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-089,Component inertia,Ixx,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-090,Component inertia,Iyy,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-091,Component inertia,Izz,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-092,Component inertia,Ixy,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-093,Component inertia,Ixz,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-094,Component inertia,Iyz,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-095,Principal inertia,principal moments,150L,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-096,Principal inertia,principal axes,150L,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-097,Component mass,component mass,150R,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-098,Component CG,component CG X,150R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-099,Component CG,component CG Y,150R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-100,Component CG,component CG Z,150R,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-101,Component inertia,Ixx,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-102,Component inertia,Iyy,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-103,Component inertia,Izz,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-104,Component inertia,Ixy,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-105,Component inertia,Ixz,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-106,Component inertia,Iyz,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-107,Principal inertia,principal moments,150R,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-108,Principal inertia,principal axes,150R,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-109,Component mass,component mass,160,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-110,Component CG,component CG X,160,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-111,Component CG,component CG Y,160,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-112,Component CG,component CG Z,160,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-113,Component inertia,Ixx,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-114,Component inertia,Iyy,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-115,Component inertia,Izz,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-116,Component inertia,Ixy,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-117,Component inertia,Ixz,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-118,Component inertia,Iyz,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-119,Principal inertia,principal moments,160,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-120,Principal inertia,principal axes,160,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-121,Component mass,component mass,170,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-122,Component CG,component CG X,170,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-123,Component CG,component CG Y,170,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-124,Component CG,component CG Z,170,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-125,Component inertia,Ixx,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-126,Component inertia,Iyy,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-127,Component inertia,Izz,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-128,Component inertia,Ixy,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-129,Component inertia,Ixz,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-130,Component inertia,Iyz,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-131,Principal inertia,principal moments,170,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-132,Principal inertia,principal axes,170,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-133,Component mass,component mass,180,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-134,Component CG,component CG X,180,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-135,Component CG,component CG Y,180,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-136,Component CG,component CG Z,180,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-137,Component inertia,Ixx,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-138,Component inertia,Iyy,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-139,Component inertia,Izz,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-140,Component inertia,Ixy,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-141,Component inertia,Ixz,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-142,Component inertia,Iyz,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-143,Principal inertia,principal moments,180,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-144,Principal inertia,principal axes,180,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-145,Component mass,component mass,190,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-146,Component CG,component CG X,190,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-147,Component CG,component CG Y,190,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-148,Component CG,component CG Z,190,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-149,Component inertia,Ixx,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-150,Component inertia,Iyy,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-151,Component inertia,Izz,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-152,Component inertia,Ixy,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-153,Component inertia,Ixz,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-154,Component inertia,Iyz,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-155,Principal inertia,principal moments,190,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-156,Principal inertia,principal axes,190,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-157,Component mass,component mass,200,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-158,Component CG,component CG X,200,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-159,Component CG,component CG Y,200,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-160,Component CG,component CG Z,200,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-161,Component inertia,Ixx,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-162,Component inertia,Iyy,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-163,Component inertia,Izz,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-164,Component inertia,Ixy,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-165,Component inertia,Ixz,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-166,Component inertia,Iyz,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-167,Principal inertia,principal moments,200,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-168,Principal inertia,principal axes,200,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-169,Component mass,component mass,210,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-170,Component CG,component CG X,210,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-171,Component CG,component CG Y,210,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-172,Component CG,component CG Z,210,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-173,Component inertia,Ixx,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-174,Component inertia,Iyy,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-175,Component inertia,Izz,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-176,Component inertia,Ixy,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-177,Component inertia,Ixz,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-178,Component inertia,Iyz,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-179,Principal inertia,principal moments,210,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-180,Principal inertia,principal axes,210,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-181,Component mass,component mass,J,,kg,MISSING,V7_R5_MASS,,Mass not promoted without controlled material/density mapping.,NO,NO,YES
+M-182,Component CG,component CG X,J,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-183,Component CG,component CG Y,J,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-184,Component CG,component CG Z,J,,mm,MISSING,V7_R5_MASS,,No controlled component CG.,NO,NO,YES
+M-185,Component inertia,Ixx,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-186,Component inertia,Iyy,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-187,Component inertia,Izz,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-188,Component inertia,Ixy,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-189,Component inertia,Ixz,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-190,Component inertia,Iyz,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled component inertia tensor.,NO,NO,YES
+M-191,Principal inertia,principal moments,J,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-192,Principal inertia,principal axes,J,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal inertia.,NO,NO,YES
+M-193,Assembly/system,Seat total mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No measured/controlled total seat mass.,NO,NO,YES
+M-194,Assembly/system,Structure mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No structure mass.,NO,NO,YES
+M-195,Assembly/system,Carriage mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No carriage mass.,NO,NO,YES
+M-196,Assembly/system,Rail mass L,SYSTEM,,kg,MISSING,V7_R5_MASS,,No left rail mass.,YES,NO,YES
+M-197,Assembly/system,Rail mass R,SYSTEM,,kg,MISSING,V7_R5_MASS,,No right rail mass.,YES,NO,YES
+M-198,Assembly/system,Absorber mass L,SYSTEM,,kg,MISSING,V7_R5_MASS,,No left absorber mass.,NO,NO,YES
+M-199,Assembly/system,Absorber mass R,SYSTEM,,kg,MISSING,V7_R5_MASS,,No right absorber mass.,NO,NO,YES
+M-200,Assembly/system,Seatback mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No seatback mass.,YES,NO,YES
+M-201,Assembly/system,Lock mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No lock mass.,NO,NO,YES
+M-202,Assembly/system,Rebound mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No rebound module mass.,NO,NO,YES
+M-203,Assembly/system,Restraint/guidance mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No controlled restraint/guidance mass.,YES,NO,YES
+M-204,Assembly/system,Sensor/interface mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,No sensor/interface mass.,NO,NO,YES
+M-205,Assembly/system,Assembly CG X,SYSTEM,,mm,MISSING,V7_R5_MASS,,No controlled assembly CG.,NO,NO,YES
+M-206,Assembly/system,Assembly CG Y,SYSTEM,,mm,MISSING,V7_R5_MASS,,No controlled assembly CG.,NO,NO,YES
+M-207,Assembly/system,Assembly CG Z,SYSTEM,,mm,MISSING,V7_R5_MASS,,No controlled assembly CG.,NO,NO,YES
+M-208,Assembly/system,Assembly Ixx,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled total inertia.,NO,NO,YES
+M-209,Assembly/system,Assembly Iyy,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled total inertia.,NO,NO,YES
+M-210,Assembly/system,Assembly Izz,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled total inertia.,NO,NO,YES
+M-211,Assembly/system,Assembly Ixy,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled total inertia.,NO,NO,YES
+M-212,Assembly/system,Assembly Ixz,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled total inertia.,NO,NO,YES
+M-213,Assembly/system,Assembly Iyz,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled total inertia.,NO,NO,YES
+M-214,Assembly/system,Assembly principal moments,SYSTEM,,kg·mm²,MISSING,V7_R5_MASS,,No controlled principal moments.,NO,NO,YES
+M-215,Assembly/system,Assembly principal axes,SYSTEM,,dimensionless/frame,MISSING,V7_R5_MASS,,No controlled principal axes.,NO,NO,YES
+M-216,Assembly/system,Occupant mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,Occupant mass definition unresolved.,YES,NO,YES
+M-217,Assembly/system,Combined seat+occupant mass,SYSTEM,,kg,MISSING,V7_R5_MASS,,Cannot be formed from unresolved seat/occupant mass.,YES,NO,YES
+M-218,Assembly/system,Dynamic initial mass state,SYSTEM,,kg/state,MISSING,V7_R5_MASS,,No controlled dynamic mass-state definition.,NO,NO,YES

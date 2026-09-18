@@ -1,0 +1,55 @@
+{
+  "MANIFEST_TYPE": "V7_MASTER_NORMALIZATION_SHA256_MANIFEST",
+  "TASK_ID": "V7-MASTER-NORMALIZATION-GATE-003",
+  "SOURCE_AUDIT": "V7-MASTER-DATA-COMPLETENESS-AUDIT-002",
+  "SOURCE_AUDIT_SHA256": "4c2779de3a736d4ac5efb5d0d4006ed80afca357fb3d41785a54c0141a406b54",
+  "COMMIT_SHA": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+  "SELF_HASH_POLICY": "Manifest contains checksums for all other required outputs; its own SHA-256 is recorded externally in the final verification line because embedding its own hash would be self-referential.",
+  "ARTIFACTS": {
+    "V7_CANONICAL_ENGINEERING_PARAMETER_REGISTER.csv": {
+      "path": "V7_CANONICAL_ENGINEERING_PARAMETER_REGISTER.csv",
+      "sha256": "559f5dd92f8a2433e2ccbd4554ef5fcb706ca1e05aba3d90c5de46eabd62a987",
+      "bytes": 1008695
+    },
+    "V7_CANONICAL_DIMENSION_BASELINE.csv": {
+      "path": "V7_CANONICAL_DIMENSION_BASELINE.csv",
+      "sha256": "bcff50c577285208387594bed50fa0bd9b2457053385c9942540cef90aa35fba",
+      "bytes": 65110
+    },
+    "V7_CANONICAL_MASS_PROPERTY_BASELINE.csv": {
+      "path": "V7_CANONICAL_MASS_PROPERTY_BASELINE.csv",
+      "sha256": "ba675b55ebd6718baf07bd01d2901e91deb94acc781abd989e69062cab452351",
+      "bytes": 24958
+    },
+    "V7_CANONICAL_DATUM_AND_COORDINATE_BASELINE.md": {
+      "path": "V7_CANONICAL_DATUM_AND_COORDINATE_BASELINE.md",
+      "sha256": "0721c90a100e97db0f6a49f922aece5252a7e90649270ba3a425c8ef384f4ecb",
+      "bytes": 3355
+    },
+    "V7_CANONICAL_INTERFACES_AND_JOINT_BASELINE.csv": {
+      "path": "V7_CANONICAL_INTERFACES_AND_JOINT_BASELINE.csv",
+      "sha256": "400cfcf21ec61e06ae15e4aba5c6c880c5b645cae790d67e48326c9a9ddbe034",
+      "bytes": 3113
+    },
+    "V7_CANONICAL_STATE_MACHINE_BASELINE.md": {
+      "path": "V7_CANONICAL_STATE_MACHINE_BASELINE.md",
+      "sha256": "bbcbf20e134e871496a4cb8417356e2a495eb5d86d11377c1376846c48120976",
+      "bytes": 1999
+    },
+    "V7_NUMERICAL_CONFLICT_RESOLUTION_REGISTER.csv": {
+      "path": "V7_NUMERICAL_CONFLICT_RESOLUTION_REGISTER.csv",
+      "sha256": "7640128e2955964706120f386a56c07bd32c8922df6159965dbafbf37c377598",
+      "bytes": 10420
+    },
+    "V7_CANONICAL_DATA_READINESS_MATRIX.csv": {
+      "path": "V7_CANONICAL_DATA_READINESS_MATRIX.csv",
+      "sha256": "2f755d6e051ba022e984d76dae802bc78d6f9c6baf747ce32b0537eaa6df9c11",
+      "bytes": 6999
+    },
+    "V7_MASTER_NORMALIZATION_EXECUTIVE_SUMMARY.md": {
+      "path": "V7_MASTER_NORMALIZATION_EXECUTIVE_SUMMARY.md",
+      "sha256": "ac5a963295cc646cff1c451d12b2c4bce4c48519933d2c376f15919aa70cfe1a",
+      "bytes": 2934
+    }
+  }
+}

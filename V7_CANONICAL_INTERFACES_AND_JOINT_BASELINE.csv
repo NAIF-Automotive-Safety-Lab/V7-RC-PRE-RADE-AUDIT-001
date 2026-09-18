@@ -1,0 +1,17 @@
+INTERFACE_ID,PARENT,CHILD,INTERFACE_TYPE,MODEL_COUPLING,PHYSICAL_RELEASE_STATUS,FASTENER_OR_JOINT_RELEASE,EVIDENCE_CLASS,CONFLICT_ID,NOTE,RADE_MAY_USE,RADE_MAY_MODIFY,RADE_MUST_NOT_ASSUME
+IF-R4-01,120,130L,STRUCTURAL_INTERFACE,q1-coupled,MISSING/TEST_REQUIRED,fastener not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,No released fastening/clearance/load evidence.,YES,NO,YES
+IF-R4-02,120,130R,STRUCTURAL_INTERFACE,q1-coupled,MISSING/TEST_REQUIRED,fastener not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,No released fastening/clearance/load evidence.,YES,NO,YES
+IF-R4-03,120,140,STRUCTURAL_INTERFACE,q1-coupled,MISSING,fastener not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,No released fastening/geometry evidence.,YES,NO,YES
+IF-R4-04,120,200,GUIDED_INTERFACE,q1-coupled,MISSING,guide/contact definition incomplete,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,C-015,Continuous-motion clearance and guide definition unresolved.,YES,NO,YES
+IF-R4-05,130L,140,STRUCTURAL_INTERFACE,structural load transfer,MISSING/TEST_REQUIRED,fastening not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,Positive model overlap is not physical joint proof.,YES,NO,YES
+IF-R4-06,130R,140,STRUCTURAL_INTERFACE,structural load transfer,MISSING/TEST_REQUIRED,fastening not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,Positive model overlap is not physical joint proof.,YES,NO,YES
+IF-R4-07,140,160,STRUCTURAL_INTERFACE,structural load transfer,MISSING,fastening not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,Load-path/capacity evidence absent.,YES,NO,YES
+IF-R4-08,150L,160,JOINT,q2-coupled; translational constrained; Ry=q2,MODEL_ONLY,local clearance and physical pin axis not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,Model-level link joint only.,YES,NO,YES
+IF-R4-09,160,J,JOINT,Ry=q2; q2=-10..25 deg in model,MODEL_ONLY,hinge play/clearance/fastener not released,CURRENT_ENGINEERING_DESIGN_DEFINITION / MODEL_ONLY,,Model hinge semantics only.,YES,NO,YES
+J_RAIL_L,110L,120,PRISMATIC,q1,MODEL_ONLY,MISSING,MODEL_DERIVED,,Model joint; physical rail/runner semantics and end-stops unresolved.,YES,NO,YES
+J_RAIL_R,110R,120,PRISMATIC,q1,MODEL_ONLY,MISSING,MODEL_DERIVED,,Model joint; physical rail/runner semantics and end-stops unresolved.,YES,NO,YES
+J_SEATBACK,J,160,REVOLUTE,"Ry=q2; axis [0,1,0] in model",MODEL_ONLY,MISSING,MODEL_DERIVED,C-001,Model axis is frame-dependent; no physical transform declared.,YES,NO,YES
+J_LINK_L,150L,160,REVOLUTE_LINK,q2-coupled,MODEL_ONLY,MISSING,MODEL_DERIVED,C-015,Model link semantics only.,YES,NO,YES
+J_LINK_R,150R,160,REVOLUTE_LINK,q2-coupled,MODEL_ONLY,MISSING,MODEL_DERIVED,C-015,Model link semantics only.,YES,NO,YES
+J_LOCK170,170,120/160,STATE_CONSTRAINT,state-dependent,TEST_REQUIRED,MISSING,MODEL_DERIVED / TEST_REQUIRED,C-012,Physical state machine/fault behavior not validated.,NO,NO,YES
+J_REBOUND180,180,120,STATE_CONSTRAINT,state-dependent,TEST_REQUIRED,MISSING,MODEL_DERIVED / TEST_REQUIRED,,Reverse-motion behavior not characterized.,NO,NO,YES
