@@ -1,0 +1,247 @@
+{
+  "package_identity": "V7_ENGINEERING_BASELINE_PACKAGE_R3_CANONICAL",
+  "revision": "V7-RC-003",
+  "source_package": "V7_ENGINEERING_BASELINE_PACKAGE_R3.zip",
+  "canonical_zip_filename": "V7_ENGINEERING_BASELINE_PACKAGE_R3_CANONICAL.zip",
+  "canonical_zip_sha256": "1a5a537f4b423c8cb6f21e826787f3cccfed006f8bb71146326ef6cc4da54e52",
+  "member_count": 46,
+  "generated_utc": "2026-09-08T21:32:38.105583+00:00",
+  "manifest_location": "EXTERNAL_ONLY",
+  "members": [
+    {
+      "path": "ASSEMBLY/V7_ASSEMBLY_MANIFEST.json",
+      "size_bytes": 2975,
+      "sha256": "b30d6590b55f93a51412125a02af86819a67445df4d9daacf0144f1dffae3e79"
+    },
+    {
+      "path": "BOM/V7_R2_BOM.json",
+      "size_bytes": 5005,
+      "sha256": "b832dfd49545975b01f0af17401db2553fc0f3042078f4e282539da6bd70b65f"
+    },
+    {
+      "path": "CAD_NATIVE/v7_engineering_reconstruction_R2.py",
+      "size_bytes": 6426,
+      "sha256": "afc40cdafd10565b106d96da7db09042c62f4592105d4aa6a06f1a19e6b99ef4"
+    },
+    {
+      "path": "CAD_STEP/P100_BASE.step",
+      "size_bytes": 52313,
+      "sha256": "e918974579cfd8cf85c7d861d8aecc53aa94f10141a5a7e8f9fe957612390ded"
+    },
+    {
+      "path": "CAD_STEP/P110L_RAIL.step",
+      "size_bytes": 29328,
+      "sha256": "20946329ba7178bee18148e2bff55a2fddef970856e3cb6e5839bed28596cd62"
+    },
+    {
+      "path": "CAD_STEP/P110R_RAIL.step",
+      "size_bytes": 29278,
+      "sha256": "0fca6fd1e5b70ea369d9154c9577b2e155b977e1882b72e4fc707c31aa0ef5f4"
+    },
+    {
+      "path": "CAD_STEP/P120_CARRIAGE.step",
+      "size_bytes": 48695,
+      "sha256": "91a6daef7e5f1d7310682c3a6477d1aa9e402f225e60a0e69c6e612c587dcd83"
+    },
+    {
+      "path": "CAD_STEP/P130L_ABSORBER.step",
+      "size_bytes": 27755,
+      "sha256": "634b0739fd41d1fe4496bb6151930cecd9aad68fbc2884a76df88801c4a8243b"
+    },
+    {
+      "path": "CAD_STEP/P130R_ABSORBER.step",
+      "size_bytes": 27709,
+      "sha256": "de4b4a8dbfab4d4dce6654ce3f8ec877a7ec2dd67398772494e4c8e6fbe4129d"
+    },
+    {
+      "path": "CAD_STEP/P140_PELVIC_CONTROL.step",
+      "size_bytes": 58388,
+      "sha256": "3a4ee3b08bbf400ea326fc5f27efd9b584e1bd7db1537076c38734dd49a7a5c9"
+    },
+    {
+      "path": "CAD_STEP/P150L_ROTATION_LINK.step",
+      "size_bytes": 28749,
+      "sha256": "98780b73442a47a8b4fadce786d1cc69d9a999686deabdba5b1704e56300a541"
+    },
+    {
+      "path": "CAD_STEP/P150R_ROTATION_LINK.step",
+      "size_bytes": 29308,
+      "sha256": "7d92b7ef63e97eef3f6db9e8fd41e036cc7a43f44e35f96752c5d375b278e0d9"
+    },
+    {
+      "path": "CAD_STEP/P160_SEATBACK_FRAME.step",
+      "size_bytes": 57810,
+      "sha256": "35da1efc45172078fd60ec82067b7bcef14ede46cdcbf0edcaa9db921ed61f8b"
+    },
+    {
+      "path": "CAD_STEP/P170_LOCK170.step",
+      "size_bytes": 20021,
+      "sha256": "07222f8973506e5152a4b80db8b974786d00ea70d6b128a8ef177b5d1c502817"
+    },
+    {
+      "path": "CAD_STEP/P180_REBOUND.step",
+      "size_bytes": 19550,
+      "sha256": "dca024499bca657542d3781cd34ad1b5ed29207fb7834efc65e127387c543113"
+    },
+    {
+      "path": "CAD_STEP/P190_RESTRAINT_INTERFACES.step",
+      "size_bytes": 32833,
+      "sha256": "c92562b01ac66262e986e82309b793a994a53e4970bad97da07acb4b645255df"
+    },
+    {
+      "path": "CAD_STEP/P200_OCCUPANT_GUIDANCE.step",
+      "size_bytes": 36004,
+      "sha256": "854b946deaf29958505669807452687e693f77efd1ce72bafdb30275b8e82fd9"
+    },
+    {
+      "path": "CAD_STEP/P210_SENSOR_INTERFACE.step",
+      "size_bytes": 30908,
+      "sha256": "190dcde1b4328af6b823dfefdb1e98f47e80d17e3d6604fce0e3df71bd94715a"
+    },
+    {
+      "path": "CAD_STEP/PJ_HINGE_PIVOT.step",
+      "size_bytes": 13244,
+      "sha256": "27981d1f4fc03293f0942664f48ff1d55c471abef094392ae9d00b4b028a40e2"
+    },
+    {
+      "path": "CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY.step",
+      "size_bytes": 567678,
+      "sha256": "2815121a4622468976b81ac5463b9807d8761692c98d119b7235f1ae3da24f59"
+    },
+    {
+      "path": "CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY_HIERARCHICAL.step",
+      "size_bytes": 567678,
+      "sha256": "2815121a4622468976b81ac5463b9807d8761692c98d119b7235f1ae3da24f59"
+    },
+    {
+      "path": "CAE/V7_R2_CAE_INPUT_MANIFEST.json",
+      "size_bytes": 3067,
+      "sha256": "40d4840ec79ef3a50ee89614430347ebfcd21da44d88ae888f710ffc3b3d3b23"
+    },
+    {
+      "path": "INTERFACES/V7_R2_INTERFACE_REGISTER.csv",
+      "size_bytes": 1147,
+      "sha256": "3048279a3d2031badbdf399ef26a82ac1557be681f9805b538512673667f98b9"
+    },
+    {
+      "path": "KINEMATICS/V7_KINEMATIC_EXECUTION_SUMMARY.json",
+      "size_bytes": 433,
+      "sha256": "0a0d080218417f454a73657b18cf2296c3594a3c4a4dd75d985de92aeca6526c"
+    },
+    {
+      "path": "KINEMATICS/V7_KINEMATIC_MODEL.json",
+      "size_bytes": 3264,
+      "sha256": "e8f97e88d7eba334a218be3e7a460f69e3b51a7153410007cbef56fc9025827a"
+    },
+    {
+      "path": "KINEMATICS/V7_KINEMATIC_MODEL.py",
+      "size_bytes": 516,
+      "sha256": "71b433dd3c07161c0ecf532cab0b6fc813d7c3e185b5bc9989952cef06034ea3"
+    },
+    {
+      "path": "KINEMATICS/V7_R2_DOF_EXECUTION_PROOF.json",
+      "size_bytes": 1066,
+      "sha256": "78b299d340e8e01fd1680ece86c9fa447a122d08904f0187e6642e34744d92ca"
+    },
+    {
+      "path": "KINEMATICS/V7_R2_KINEMATIC_EXECUTION.csv",
+      "size_bytes": 26271,
+      "sha256": "49ba8a88b17f63abcd457e7523fe964d1abca034bee942dd240f5e45c4232042"
+    },
+    {
+      "path": "KINEMATICS/V7_R3_KINEMATIC_EXECUTION_PROOF.json",
+      "size_bytes": 406,
+      "sha256": "a74d95ff9db047d047ce11f21860a2f4abde8a07e0b5d589a165bdebc75f24a6"
+    },
+    {
+      "path": "MANIFESTS/V7_ENGINEERING_BASELINE_MANIFEST_R2.json",
+      "size_bytes": 7267,
+      "sha256": "774f2fbf7566834e7620e207d4b3c0c368e5c7e24a87b1fb5d90a26625232d99"
+    },
+    {
+      "path": "MANIFESTS/V7_R2_EXECUTIVE_REPORT.md",
+      "size_bytes": 4349,
+      "sha256": "bee220665fcd08587bc2f39e1d5d1be7424f1d590746527ff55685c50452db74"
+    },
+    {
+      "path": "MANUFACTURABILITY/V7_R2_MANUFACTURABILITY.json",
+      "size_bytes": 3658,
+      "sha256": "e01e66a9469ea0d0343e728232a740e3dae6be53eb2364674261079cc1627cef"
+    },
+    {
+      "path": "MATERIALS/V7_R2_MASS_PROPERTIES.json",
+      "size_bytes": 3316,
+      "sha256": "e74ad17eaff5532a9b9371ebc4254d69eac24cb66f8069dcd649935d8e34ca93"
+    },
+    {
+      "path": "MATERIALS/V7_R2_MATERIALS.json",
+      "size_bytes": 3874,
+      "sha256": "dd151173e87f7c2c86e31c8e79478bb78037c15733ad06d014b13a2f68c289e1"
+    },
+    {
+      "path": "PMI_GDT/V7_CRITICAL_CHARACTERISTICS.json",
+      "size_bytes": 2448,
+      "sha256": "531ced5f48779782ea23b11484cf906c80a6d6340141ee44c02f1e8c53267708"
+    },
+    {
+      "path": "PMI_GDT/V7_R2_PMI_GDT.json",
+      "size_bytes": 1989,
+      "sha256": "b806e81558937160fec748cd011a71fefd635d45272371c7a53ab0144f2f98c0"
+    },
+    {
+      "path": "TRACEABILITY/V7_PARAMETER_REGISTER.json",
+      "size_bytes": 1156,
+      "sha256": "2bb8e40bbbb538a0685d8181c14270e622d82e27b26b802a082743db29fa222c"
+    },
+    {
+      "path": "TRACEABILITY/V7_R2_REQUIREMENT_TRACEABILITY.json",
+      "size_bytes": 2522,
+      "sha256": "c2a649e4998ab1942ddd9458a32860b95d0d507efd28c0f069162d903deec6e6"
+    },
+    {
+      "path": "TRACEABILITY/V7_R3_INTERFACE_REGISTER.json",
+      "size_bytes": 13003,
+      "sha256": "a5f4233badee5bc36c73f4e001e75d1340f496c7958b28efa119f0b1a3aecebe"
+    },
+    {
+      "path": "TRACEABILITY/V7_R3_REQUIREMENT_TRACEABILITY.json",
+      "size_bytes": 1769,
+      "sha256": "8329d6a7b151744390c36cb1c71647b6cb47dc1fbd8cd3ae63f29f6d7d8a6d6f"
+    },
+    {
+      "path": "VALIDATION/V7_R2_GEOMETRY_REGRESSION.json",
+      "size_bytes": 983,
+      "sha256": "5ca435dfdec11f068d4e9fc192f76d7c4f0a6e7a57685bc6dedae3fc805a0c6e"
+    },
+    {
+      "path": "VALIDATION/V7_R2_INTERSECTION_OWNERSHIP.json",
+      "size_bytes": 7024,
+      "sha256": "171bea5a74938866da9b9bbc9ef24f99e5db0e5f9d3b93511bec87a6c6f4064c"
+    },
+    {
+      "path": "VALIDATION/V7_R2_INTERSECTION_OWNERSHIP_DETAILED.json",
+      "size_bytes": 9061,
+      "sha256": "11345b95d695dbf4aa68256bd16f4de193bf75e5358086c954564a1b0dcfab53"
+    },
+    {
+      "path": "VALIDATION/V7_R2_V0_V8_MATRIX.json",
+      "size_bytes": 691,
+      "sha256": "1b5f09d3e72036d45c732e0abddf8649c25d4f6d2a8b439a406e637687d48329"
+    },
+    {
+      "path": "VALIDATION/V7_R3_INTERFACE_FORENSICS.json",
+      "size_bytes": 15578,
+      "sha256": "ef6c5d728f8ff54fd55727ae1038c9b9c8ae96dee3c5876f4f14de3571bde570"
+    },
+    {
+      "path": "VALIDATION/V7_R3_PACKAGE_MANIFEST_AUDIT.json",
+      "size_bytes": 689,
+      "sha256": "055cf5529cea2ce9ecedf9dc466b7ab00aa04adf24c340fae30747480d29f46c"
+    }
+  ],
+  "notes": {
+    "exact_byte_preserving_copy_of_source_r3": true,
+    "external_manifest_not_in_zip": true,
+    "r2_to_r3_step_geometry_files_unchanged": true
+  }
+}

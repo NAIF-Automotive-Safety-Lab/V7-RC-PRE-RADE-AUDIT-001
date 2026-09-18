@@ -1,0 +1,228 @@
+{
+  "TASK_ID": "V7-RADE-CONTROLLED-WORKING-PACKAGE-GATE-004",
+  "FINAL_GATE": "PASS",
+  "approved_cad_source": "V7_ENGINEERING_BASELINE_PACKAGE_R3_CANONICAL.zip",
+  "approved_revision": "V7-RC-003",
+  "approved_cad_payload_count": 18,
+  "canonical_v7_r3_immutable": true,
+  "working_copy_non_authoritative": true,
+  "rade_may_modify_working_copy_only": true,
+  "proposed_change_register_rows": 0,
+  "native_catia_v5_master_available": false,
+  "step_representation": "GEOMETRY_EXCHANGE_ASSESSMENT_NOT_NATIVE_MASTER",
+  "project_coordinate_frame": "CONFLICTED_C-001_NOT_RESOLVED",
+  "state_vocabulary": [
+    "S0 Normal",
+    "S1 Armed/Capture",
+    "S2 Pelvis Lock/Capture",
+    "S3 Ride-Down",
+    "S4 Rotation/Rebound",
+    "S5 Secure/Post-event"
+  ],
+  "source_project_commit_sha": "f562a8cfe00835f1919ab3683bf17b3ae407100b",
+  "audit_repository_commit_sha": "NOT_ESTABLISHED_IN_AVAILABLE_RECORDS",
+  "engineering_validity": "FAIL-CLOSED",
+  "checks": [
+    {
+      "check": "r3_package_hash_matches_manifest",
+      "pass": true
+    },
+    {
+      "check": "r3_cad_count_18",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P100_BASE.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P100_BASE.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P110L_RAIL.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P110L_RAIL.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P110R_RAIL.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P110R_RAIL.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P120_CARRIAGE.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P120_CARRIAGE.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P130L_ABSORBER.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P130L_ABSORBER.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P130R_ABSORBER.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P130R_ABSORBER.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P140_PELVIC_CONTROL.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P140_PELVIC_CONTROL.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P150L_ROTATION_LINK.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P150L_ROTATION_LINK.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P150R_ROTATION_LINK.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P150R_ROTATION_LINK.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P160_SEATBACK_FRAME.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P160_SEATBACK_FRAME.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P170_LOCK170.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P170_LOCK170.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P180_REBOUND.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P180_REBOUND.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P190_RESTRAINT_INTERFACES.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P190_RESTRAINT_INTERFACES.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P200_OCCUPANT_GUIDANCE.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P200_OCCUPANT_GUIDANCE.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:P210_SENSOR_INTERFACE.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:P210_SENSOR_INTERFACE.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:PJ_HINGE_PIVOT.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:PJ_HINGE_PIVOT.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY.step",
+      "pass": true
+    },
+    {
+      "check": "source_hash:V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY_HIERARCHICAL.step",
+      "pass": true
+    },
+    {
+      "check": "working_hash:V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY_HIERARCHICAL.step",
+      "pass": true
+    },
+    {
+      "check": "source_conflict_csv_roundtrip",
+      "pass": true
+    },
+    {
+      "check": "proposed_change_csv_roundtrip",
+      "pass": true
+    },
+    {
+      "check": "artifact_index_csv_roundtrip",
+      "pass": true
+    },
+    {
+      "check": "no_ephemeral_file_ids",
+      "pass": true
+    },
+    {
+      "check": "two_provenance_fields_separate",
+      "pass": true
+    },
+    {
+      "check": "no_silent_coordinate_resolution",
+      "pass": true
+    },
+    {
+      "check": "canonical_reference_read_only",
+      "pass": true
+    },
+    {
+      "check": "working_copy_modifiable",
+      "pass": true
+    },
+    {
+      "check": "stage0_boundary_present",
+      "pass": true
+    },
+    {
+      "check": "state_vocab_exact",
+      "pass": true
+    },
+    {
+      "check": "no_patent_positioning_in_rade_docs",
+      "pass": true
+    },
+    {
+      "check": "r3_manifest_source_reference_present",
+      "pass": true
+    }
+  ],
+  "ALL_REQUIRED_GATE_CHECKS_PASS": true
+}
