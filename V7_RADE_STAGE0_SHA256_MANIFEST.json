@@ -1,0 +1,213 @@
+{
+  "manifest_type": "V7_STAGE0_EXTERNAL_SHA256_MANIFEST",
+  "task_id": "V7-RADE-STAGE0-FINAL-PACKAGE-006",
+  "classification": "CONFIDENTIAL \u2014 LIMITED PURPOSE ENGINEERING ASSESSMENT",
+  "package_sha256": "EXTERNAL_SIDECAR_AFTER_ZIP_CREATION",
+  "member_count": 51,
+  "members": {
+    "00_CONTROL/V7_RADE_STAGE0_CHANGE_CONTROL_PROTOCOL.md": {
+      "sha256": "2423387cd11847e5324d58f9d0913079d2cdc607a27d46e692827e7e3b968cee",
+      "size_bytes": 1741
+    },
+    "00_CONTROL/V7_RADE_STAGE0_DELIVERABLE_SCHEMA.md": {
+      "sha256": "1dbd67b99096369701141b6ebf1959a9e65fc76a700bcda557b6098140c286e2",
+      "size_bytes": 2818
+    },
+    "00_CONTROL/V7_RADE_STAGE0_DISCLOSURE_BOUNDARY.md": {
+      "sha256": "72f99c7f6d82782905aae683067314ab7ac8985efda04e18d5368e5747cb81cd",
+      "size_bytes": 2054
+    },
+    "00_CONTROL/V7_RADE_STAGE0_EXECUTIVE_BRIEF.md": {
+      "sha256": "e578ffd00bb91615169b9053b33d69ce3ce360c55190741d6da36e2b54644866",
+      "size_bytes": 2386
+    },
+    "00_CONTROL/V7_RADE_STAGE0_FINAL_ARTIFACT_INDEX.csv": {
+      "sha256": "69db538e6ecfa08c68a85dbeb90f6cc9a929722939d0dd9aaa93596031889478",
+      "size_bytes": 12776
+    },
+    "00_CONTROL/V7_RADE_STAGE0_FINAL_GATE.json": {
+      "sha256": "b49951fad319e9aa03cfe42f40ede0a5a93a7a16c33b67263c894bd244e19c94",
+      "size_bytes": 1841
+    },
+    "00_CONTROL/V7_RADE_STAGE0_FINAL_PACKAGE_MANIFEST.md": {
+      "sha256": "4e08409c448c7b1924f30af0fe35ec732a75ccf0e0479c2ded3cc628e89e23b8",
+      "size_bytes": 3437
+    },
+    "00_CONTROL/V7_RADE_STAGE0_INPUT_MANIFEST.md": {
+      "sha256": "7378d1bcb95ca5670b4c907043bc1884f773779e7dc1e035e0e8d4d8cc0a721e",
+      "size_bytes": 2796
+    },
+    "00_CONTROL/V7_RADE_STAGE0_SCOPE_AND_ACCEPTANCE.md": {
+      "sha256": "542f474f36969a18ab14dcbdfdb4894ee44dcac03d0257f42c9b28dfcaab161d",
+      "size_bytes": 6043
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P100_BASE.step": {
+      "sha256": "e918974579cfd8cf85c7d861d8aecc53aa94f10141a5a7e8f9fe957612390ded",
+      "size_bytes": 52313
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P110L_RAIL.step": {
+      "sha256": "20946329ba7178bee18148e2bff55a2fddef970856e3cb6e5839bed28596cd62",
+      "size_bytes": 29328
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P110R_RAIL.step": {
+      "sha256": "0fca6fd1e5b70ea369d9154c9577b2e155b977e1882b72e4fc707c31aa0ef5f4",
+      "size_bytes": 29278
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P120_CARRIAGE.step": {
+      "sha256": "91a6daef7e5f1d7310682c3a6477d1aa9e402f225e60a0e69c6e612c587dcd83",
+      "size_bytes": 48695
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P130L_ABSORBER.step": {
+      "sha256": "634b0739fd41d1fe4496bb6151930cecd9aad68fbc2884a76df88801c4a8243b",
+      "size_bytes": 27755
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P130R_ABSORBER.step": {
+      "sha256": "de4b4a8dbfab4d4dce6654ce3f8ec877a7ec2dd67398772494e4c8e6fbe4129d",
+      "size_bytes": 27709
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P140_PELVIC_CONTROL.step": {
+      "sha256": "3a4ee3b08bbf400ea326fc5f27efd9b584e1bd7db1537076c38734dd49a7a5c9",
+      "size_bytes": 58388
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P150L_ROTATION_LINK.step": {
+      "sha256": "98780b73442a47a8b4fadce786d1cc69d9a999686deabdba5b1704e56300a541",
+      "size_bytes": 28749
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P150R_ROTATION_LINK.step": {
+      "sha256": "7d92b7ef63e97eef3f6db9e8fd41e036cc7a43f44e35f96752c5d375b278e0d9",
+      "size_bytes": 29308
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P160_SEATBACK_FRAME.step": {
+      "sha256": "35da1efc45172078fd60ec82067b7bcef14ede46cdcbf0edcaa9db921ed61f8b",
+      "size_bytes": 57810
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P170_LOCK170.step": {
+      "sha256": "07222f8973506e5152a4b80db8b974786d00ea70d6b128a8ef177b5d1c502817",
+      "size_bytes": 20021
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P180_REBOUND.step": {
+      "sha256": "dca024499bca657542d3781cd34ad1b5ed29207fb7834efc65e127387c543113",
+      "size_bytes": 19550
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P190_RESTRAINT_INTERFACES.step": {
+      "sha256": "c92562b01ac66262e986e82309b793a994a53e4970bad97da07acb4b645255df",
+      "size_bytes": 32833
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P200_OCCUPANT_GUIDANCE.step": {
+      "sha256": "854b946deaf29958505669807452687e693f77efd1ce72bafdb30275b8e82fd9",
+      "size_bytes": 36004
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/P210_SENSOR_INTERFACE.step": {
+      "sha256": "190dcde1b4328af6b823dfefdb1e98f47e80d17e3d6604fce0e3df71bd94715a",
+      "size_bytes": 30908
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/PJ_HINGE_PIVOT.step": {
+      "sha256": "27981d1f4fc03293f0942664f48ff1d55c471abef094392ae9d00b4b028a40e2",
+      "size_bytes": 13244
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY.step": {
+      "sha256": "2815121a4622468976b81ac5463b9807d8761692c98d119b7235f1ae3da24f59",
+      "size_bytes": 567678
+    },
+    "01_CAD_AUTHORITY/V7_R3_CANONICAL/CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY_HIERARCHICAL.step": {
+      "sha256": "2815121a4622468976b81ac5463b9807d8761692c98d119b7235f1ae3da24f59",
+      "size_bytes": 567678
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P100_BASE.step": {
+      "sha256": "e918974579cfd8cf85c7d861d8aecc53aa94f10141a5a7e8f9fe957612390ded",
+      "size_bytes": 52313
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P110L_RAIL.step": {
+      "sha256": "20946329ba7178bee18148e2bff55a2fddef970856e3cb6e5839bed28596cd62",
+      "size_bytes": 29328
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P110R_RAIL.step": {
+      "sha256": "0fca6fd1e5b70ea369d9154c9577b2e155b977e1882b72e4fc707c31aa0ef5f4",
+      "size_bytes": 29278
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P120_CARRIAGE.step": {
+      "sha256": "91a6daef7e5f1d7310682c3a6477d1aa9e402f225e60a0e69c6e612c587dcd83",
+      "size_bytes": 48695
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P130L_ABSORBER.step": {
+      "sha256": "634b0739fd41d1fe4496bb6151930cecd9aad68fbc2884a76df88801c4a8243b",
+      "size_bytes": 27755
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P130R_ABSORBER.step": {
+      "sha256": "de4b4a8dbfab4d4dce6654ce3f8ec877a7ec2dd67398772494e4c8e6fbe4129d",
+      "size_bytes": 27709
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P140_PELVIC_CONTROL.step": {
+      "sha256": "3a4ee3b08bbf400ea326fc5f27efd9b584e1bd7db1537076c38734dd49a7a5c9",
+      "size_bytes": 58388
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P150L_ROTATION_LINK.step": {
+      "sha256": "98780b73442a47a8b4fadce786d1cc69d9a999686deabdba5b1704e56300a541",
+      "size_bytes": 28749
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P150R_ROTATION_LINK.step": {
+      "sha256": "7d92b7ef63e97eef3f6db9e8fd41e036cc7a43f44e35f96752c5d375b278e0d9",
+      "size_bytes": 29308
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P160_SEATBACK_FRAME.step": {
+      "sha256": "35da1efc45172078fd60ec82067b7bcef14ede46cdcbf0edcaa9db921ed61f8b",
+      "size_bytes": 57810
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P170_LOCK170.step": {
+      "sha256": "07222f8973506e5152a4b80db8b974786d00ea70d6b128a8ef177b5d1c502817",
+      "size_bytes": 20021
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P180_REBOUND.step": {
+      "sha256": "dca024499bca657542d3781cd34ad1b5ed29207fb7834efc65e127387c543113",
+      "size_bytes": 19550
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P190_RESTRAINT_INTERFACES.step": {
+      "sha256": "c92562b01ac66262e986e82309b793a994a53e4970bad97da07acb4b645255df",
+      "size_bytes": 32833
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P200_OCCUPANT_GUIDANCE.step": {
+      "sha256": "854b946deaf29958505669807452687e693f77efd1ce72bafdb30275b8e82fd9",
+      "size_bytes": 36004
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/P210_SENSOR_INTERFACE.step": {
+      "sha256": "190dcde1b4328af6b823dfefdb1e98f47e80d17e3d6604fce0e3df71bd94715a",
+      "size_bytes": 30908
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/PJ_HINGE_PIVOT.step": {
+      "sha256": "27981d1f4fc03293f0942664f48ff1d55c471abef094392ae9d00b4b028a40e2",
+      "size_bytes": 13244
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY.step": {
+      "sha256": "2815121a4622468976b81ac5463b9807d8761692c98d119b7235f1ae3da24f59",
+      "size_bytes": 567678
+    },
+    "02_CAD_WORKING_COPY/CAD_STEP/V7_ENGINEERING_RECONSTRUCTION_ASSEMBLY_HIERARCHICAL.step": {
+      "sha256": "2815121a4622468976b81ac5463b9807d8761692c98d119b7235f1ae3da24f59",
+      "size_bytes": 567678
+    },
+    "02_CAD_WORKING_COPY/PROPOSED_CAD_CHANGE_PACKAGE/README.md": {
+      "sha256": "7356fd63d8ae4defd90c16ba1c7b68b64d538bdaf4ba0d4f073536dc71eb015d",
+      "size_bytes": 600
+    },
+    "03_STAGE0_REFERENCE/V7_STAGE0_COORDINATE_AND_PACKAGE_STATUS.md": {
+      "sha256": "f8819ec12ecb3607f5ccc622c1c5512d6411e81a72923e148d61c06568708c06",
+      "size_bytes": 707
+    },
+    "03_STAGE0_REFERENCE/V7_STAGE0_INTERFACE_REFERENCE.csv": {
+      "sha256": "f1c79a80877950288aa592adeb120d8c92f65245b942ab53d06a38504e673d43",
+      "size_bytes": 1525
+    },
+    "03_STAGE0_REFERENCE/V7_STAGE0_MASS_PROPERTY_STATUS.md": {
+      "sha256": "b1e9b5ebe0005b721b6c27ac8ac3997b6a0be91a9fdc3579175d9005cb34f224",
+      "size_bytes": 466
+    },
+    "03_STAGE0_REFERENCE/V7_STAGE0_MODEL_REFERENCE.csv": {
+      "sha256": "364862904a435fb121cc4edf5ff1d656188d2e505be12dbe3f19948bf30bb66d",
+      "size_bytes": 521
+    },
+    "03_STAGE0_REFERENCE/V7_STAGE0_STATE_MACHINE_REFERENCE.md": {
+      "sha256": "09d45449f061776c02ca453d54e5e158977b6c8b36e6d1df0fde5abdca29ed47",
+      "size_bytes": 675
+    }
+  }
+}

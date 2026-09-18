@@ -1,0 +1,7 @@
+REFERENCE_ID,VALUE,UNIT,STATE,USE_BOUNDARY
+MODEL-001,2,coordinates,MODEL_LEVEL,Kinematic assessment only
+MODEL-002,0 to 180,mm,MODEL_LEVEL,q1 model range only; not physical stroke capability
+MODEL-003,-10,deg,MODEL_LEVEL,q2 model minimum only; not physical stop capability
+MODEL-004,+25,deg,MODEL_LEVEL,q2 model maximum only; not physical stop capability
+CONCEPT-001,25,deg,CONCEPT_LEVEL,Nominal seatback angle reference only
+CONCEPT-002,420,mm,CONCEPT_LEVEL,Rail-spacing reference only; not OEM hardpoint spacing
